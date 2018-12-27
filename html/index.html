@@ -10,20 +10,24 @@
   <link rel="stylesheet" href="../static/css/weui.min.css">
   <link rel="stylesheet" href="../static/css/jquery-weui.min.css">
   <title>shopping</title>
-  <!-- <style>
-    .demo-block {
-      width: 2rem;
-      height: 5rem;
-      background: #000;
-    }
-  </style> -->
 </head>
 <body>
-  <!-- <h1>shopping demo</h1>
-  <div class="demo-block"> </div>
-  <img src="https://img.alicdn.com/simba/img/TB1e4w8x3HqK1RjSZJnSuvNLpXa.jpg" alt="" style="width: 100%;"> -->
+  <div class="weui-search-bar" id="searchBar">
+    <form class="weui-search-bar__form">
+      <div class="weui-search-bar__box">
+        <i class="weui-icon-search"></i>
+        <input type="search" class="weui-search-bar__input" id="searchInput" placeholder="搜索" required="">
+        <a href="javascript:" class="weui-icon-clear" id="searchClear"></a>
+      </div>
+      <label class="weui-search-bar__label" id="searchText">
+        <i class="weui-icon-search"></i>
+        <span>搜索</span>
+      </label>
+    </form>
+    <a href="javascript:" class="weui-search-bar__cancel-btn" id="searchCancel">取消</a>
+  </div>
 
-  <!-- <script src="../static/js/lib/fastclick.js"></script> -->
+
   <script src="//cdn.bootcss.com/jquery/1.11.0/jquery.min.js"></script>
   <script src="//cdn.bootcss.com/jquery-weui/0.8.3/js/jquery-weui.min.js"></script>
 <script>
