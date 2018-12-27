@@ -838,4 +838,4 @@
 	} else {
 		window.FastClick = FastClick;
   }
-})();
+}());

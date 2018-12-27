@@ -1,0 +1,54 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body, div, p, ul, li,
+h1, h2 ,h3, h4, h5,
+table, td, th{
+  margin: 0;
+  padding: 0;
+}
+
+ul, li {
+  list-style: none;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+}
+body {
+  font-size: 16px;
+  max-width: 7.5rem;
+  overflow-x: hidden;
+  margin: auto;
+}
+
+a {
+  text-decoration: none;
+}
+textarea {
+  resize: none;
+}
+
+.clearfix:before,
+.clearfix:after {
+  display: table;
+  content: " ";
+}
+.clearfix:after {
+  clear: both;
+}
+table {
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+.text-right {
+  text-align: right!important;
+}
+.text-left {
+  text-align: left!important;
+}
+.text-center {
+  text-align: center!important;
+}
