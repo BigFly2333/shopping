@@ -52,3 +52,21 @@ table {
 .text-center {
   text-align: center!important;
 }
+.red-font{
+	color: #D61518;
+}
+.gray-font{
+	color: #666666;
+}
+.f24{
+	font-size: 0.24rem;
+}
+.f26{
+	font-size: 0.26rem;
+}
+.f28{
+	font-size: 0.28rem;
+}
+.f60{
+	font-size: 0.6rem;
+}
