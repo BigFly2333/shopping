@@ -1,3 +1,6 @@
+.iconDib{
+	display: inline-block !important;
+}
 .icon-share {
   display: block;
   height: .48rem;
@@ -11,4 +14,71 @@
   width: .2rem;
   background: url(../img/icon-arrow-right-red.png) no-repeat center;
   background-size: contain!important;
+}
+.icon-favorite{
+	display: block;
+  height: .44rem;
+  width: .44rem;
+  background: url(../img/icon-favorite.png) no-repeat center;
+  background-size: contain!important;
+}
+.icon-favorite-active{
+	display: block;
+  height: .44rem;
+  width: .44rem;
+  background: url(../img/icon-favorite-active.png) no-repeat center;
+  background-size: contain!important;
+}
+.icon-arrow-right{
+	display: block;
+  height: .2rem;
+  width: .2rem;
+  background: url(../img/icon-arrow-right.png) no-repeat center;
+  background-size: contain!important;
+}
+.icon-baoyou {
+	display: block;
+  height: .28rem;
+  width: .72rem;
+  background: url(../img/icon-baoyou.png) no-repeat center;
+  background-size: contain!important;
+}
+.icon-miaosha {
+	display: block;
+  height: .28rem;
+  width: 1.12rem;
+  background: url(../img/icon-miaosha.png) no-repeat center;
+  background-size: contain!important;
+}
+.icon-home{
+	display: block;
+  height: .44rem;
+  width: .44rem;
+  background: url(../img/icon-home.png) no-repeat center;
+  background-size: contain!important;
+  margin: auto;
+}
+.icon-shoppingcar{
+	display: block;
+  height: .44rem;
+  width: .44rem;
+  background: url(../img/icon-shopping-car.png) no-repeat center;
+  background-size: contain!important;
+  margin: auto;
+}
+.icon-back {
+	display: block;
+  height: .56rem;
+  width: .56rem;
+  background: url(../img/icon-arrow-left.png) no-repeat center;
+  background-size: contain!important;
+  margin: auto;
+}
+.icon-close {
+	display: block;
+	width: 0.4rem;
+	height: 0.4rem;	
+	background: url(../img/icon-close.png) no-repeat center;
+	background-size: contain!important;
+  margin: auto;
 }

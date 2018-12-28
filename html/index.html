@@ -7,8 +7,9 @@
 
   <script src="../static/js/lib/rem.js"></script>
   <link rel="stylesheet" href="../static/css/base.css">
+  <link rel="stylesheet" href="../static/css/swiper.min.css">
   <link rel="stylesheet" href="../static/css/weui.min.css">
-  <link rel="stylesheet" href="../static/css/jquery-weui.min.css">
+  <link rel="stylesheet" href="../static/css/jq-weui.css">
   <link rel="stylesheet" href="../static/css/index.css">
   <title>shopping</title>
 </head>
@@ -49,12 +50,23 @@
     </ul>
   </div>
   <div class="main-page">
-    <div class="banner-wrap">
+    <!-- <div class="banner-wrap">
       <ul class="items-wrap">
         <li class="item">
           <img src="../static/img/demo/banner2.png" alt="">
         </li>
       </ul>
+    </div> -->
+    <div class="swiper-container banner-wrap">
+      <div class="swiper-wrapper items-wrap">
+        <div class="swiper-slide item">
+          <img src="../static/img/demo/banner2.png"></div>
+        <div class="swiper-slide item">
+          <img src="../static/img/demo/banner1.png"></div>
+        <div class="swiper-slide item">
+          <img src="../static/img/demo/banner3.png"></div>
+      </div>
+      <div class="swiper-pagination"></div>
     </div>
     <div class="advantage-wrap clearfix">
       <p class="item f24 pull-left">
@@ -136,7 +148,7 @@
         <a href="/" class="goods-item block">
           <img src="../static/img/demo/goods11.png" alt="">
           <div class="goodes-item-info">
-            <p class="title f24 line-clamp-2">
+            <p class="title f24 lineclamp2">
               保税区直发 Dr.Jart+ 蒂佳婷黑竹炭泡泡清洁面膜（银灰色) 5片/盒是客户端发哦圣诞节佛唉SD佛阿三发哦死的飞机
             </p>
             <div class="tip-row clearfix">
@@ -144,7 +156,7 @@
               <p class="circle-btn pull-left">特卖</p>
             </div>
             <div class="bottom-row clearfix">
-              <p class="price f32 red-font pull-left"><span>¥139</span><span class="old-price">¥1393</span></p>
+              <p class="price f32 red-font pull-left"><span>¥139</span><span class="old-price text-del">¥1393</span></p>
               <p class="weui-btn weui-btn_mini weui-btn_warn pull-right">马上抢</p>
             </div>
           </div>
@@ -152,15 +164,15 @@
         <a href="/" class="goods-item block">
           <img src="../static/img/demo/goods10.png" alt="">
           <div class="goodes-item-info">
-            <p class="title f24 line-clamp-2">
+            <p class="title f24 lineclamp2">
               保税区直发 Dr.Jart+ 蒂佳婷黑
             </p>
             <div class="tip-row clearfix">
-              <p class="circle-btn pull-left">每满200减20</p>
-              <p class="circle-btn pull-left">特卖</p>
+              <p class="circle-btn pull-left circle-btn-mini">每满200减20</p>
+              <p class="circle-btn pull-left circle-btn-mini">特卖</p>
             </div>
             <div class="bottom-row clearfix">
-              <p class="price f32 red-font pull-left"><span>¥139</span><span class="old-price">¥1393</span></p>
+              <p class="price f32 red-font pull-left"><span>¥139</span><span class="old-price text-del">¥1393</span></p>
               <p class="weui-btn weui-btn_mini weui-btn_warn pull-right">马上抢</p>
             </div>
           </div>
@@ -176,18 +188,306 @@
       <a href="/" class="banner-300">
         <img src="../static/img/demo/banner1.png" alt="">
       </a>
+      <div class="hot-goods-container">
+        <ul class="swiper-wrapper block clearfix">
+          <li class="swiper-slide hot-item block pull-left">
+            <a href="/" class="block">
+              <img src="../static/img/demo/goods2.png" alt="">
+              <p class="title lineclamp2">WHOO 拱辰享水乳套盒</p>
+              <p class="circle-btn circle-btn-mini">每满200减20</p>
+              <p class="price clearfix">
+                <span class="red-font f24 pull-left">￥88</span>
+                <span class="text-del f24 pull-right">￥8888</span>
+              </p>
+            </a>
+          </li>
+          <li class="swiper-slide hot-item block pull-left">
+            <a href="/" class="block">
+              <img src="../static/img/demo/goods3.png" alt="">
+              <p class="title lineclamp2">WHOO 拱辰享水乳套拱辰享水乳套盒拱辰享水乳套盒拱辰享水乳套盒盒</p>
+              <p class="circle-btn circle-btn-mini">包邮</p>
+              <p class="price clearfix">
+                <span class="red-font f24 pull-left">￥88</span>
+                <span class="text-del f24 pull-right">￥8888</span>
+              </p>
+            </a>
+          </li>
+          <li class="swiper-slide hot-item block pull-left">
+            <a href="/" class="block">
+              <img src="../static/img/demo/goods4.png" alt="">
+              <p class="title lineclamp2">WHOO 地方的</p>
+              <p class="circle-btn circle-btn-mini">包税</p>
+              <p class="price clearfix">
+                <span class="red-font f24 pull-left">￥88</span>
+                <span class="text-del f24 pull-right">￥8888</span>
+              </p>
+            </a>
+          </li>
+          <li class="swiper-slide hot-item block pull-left">
+            <a href="/" class="block">
+              <img src="../static/img/demo/goods2.png" alt="">
+              <p class="title lineclamp2">WHOO 地方的</p>
+              <p class="circle-btn circle-btn-mini">包税</p>
+              <p class="price clearfix">
+                <span class="red-font f24 pull-left">￥1999</span>
+                <span class="text-del f24 pull-right">￥8888</span>
+              </p>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <a href="/" class="banner-300">
+        <img src="../static/img/demo/banner1.png" alt="">
+      </a>
+      <div class="hot-goods-container">
+        <ul class="swiper-wrapper block clearfix">
+          <li class="swiper-slide hot-item block pull-left">
+            <a href="/" class="block">
+              <img src="../static/img/demo/goods2.png" alt="">
+              <p class="title lineclamp2">WHOO 拱辰享水乳套盒</p>
+              <p class="circle-btn circle-btn-mini">每满200减20</p>
+              <p class="price clearfix">
+                <span class="red-font f24 pull-left">￥88</span>
+                <span class="text-del f24 pull-right">￥8888</span>
+              </p>
+            </a>
+          </li>
+          <li class="swiper-slide hot-item block pull-left">
+            <a href="/" class="block">
+              <img src="../static/img/demo/goods3.png" alt="">
+              <p class="title lineclamp2">WHOO 拱辰享水乳套拱辰享水乳套盒拱辰享水乳套盒拱辰享水乳套盒盒</p>
+              <p class="circle-btn circle-btn-mini">包邮</p>
+              <p class="price clearfix">
+                <span class="red-font f24 pull-left">￥88</span>
+                <span class="text-del f24 pull-right">￥8888</span>
+              </p>
+            </a>
+          </li>
+          <li class="swiper-slide hot-item block pull-left">
+            <a href="/" class="block">
+              <img src="../static/img/demo/goods4.png" alt="">
+              <p class="title lineclamp2">WHOO 地方的</p>
+              <p class="circle-btn circle-btn-mini">包税</p>
+              <p class="price clearfix">
+                <span class="red-font f24 pull-left">￥88</span>
+                <span class="text-del f24 pull-right">￥8888</span>
+              </p>
+            </a>
+          </li>
+          <li class="swiper-slide hot-item block pull-left">
+            <a href="/" class="block">
+              <img src="../static/img/demo/goods2.png" alt="">
+              <p class="title lineclamp2">WHOO 地方的</p>
+              <p class="circle-btn circle-btn-mini">包税</p>
+              <p class="price clearfix">
+                <span class="red-font f24 pull-left">￥1999</span>
+                <span class="text-del f24 pull-right">￥8888</span>
+              </p>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="splitbold"></div>
+    <div class="sales-hot-wrap-2">
+      <h1 class="title">超值热卖</h1>
+      <div class="banner-300">
+        <img src="../static/img/demo/banner2.png" alt="">
+      </div>
+      <div class="weui-grids">
+        <a href="/" class="block hot-item weui-grid">
+          <img src="../static/img/demo/goods2.png" alt="">
+          <p class="title lineclamp2">WHOO 拱辰享水乳套盒</p>
+          <p class="red-font f32 text-center">￥88</p>
+          <p class="text-del f24 text-center">￥8888</p>
+        </a>
+        <a href="/" class="block hot-item weui-grid">
+          <img src="../static/img/demo/goods2.png" alt="">
+          <p class="title lineclamp2">WHOO 地方地方</p>
+          <p class="red-font f32 text-center">￥88</p>
+          <p class="text-del f24 text-center">￥8888</p>
+        </a>
+        <a href="/" class="block hot-item weui-grid">
+          <img src="../static/img/demo/goods2.png" alt="">
+          <p class="title lineclamp2">WHOO 拱辰享水乳拱辰享水乳套盒拱辰享水乳套盒拱辰享水乳套盒套盒</p>
+          <p class="red-font f32 text-center">￥88</p>
+          <p class="text-del f24 text-center">￥8888</p>
+        </a>
+        <a href="/" class="block hot-item weui-grid">
+          <img src="../static/img/demo/goods2.png" alt="">
+          <p class="title lineclamp2">WHOO 拱辰享水乳套盒</p>
+          <p class="red-font f32 text-center">￥88</p>
+          <p class="text-del f24 text-center">￥8888</p>
+        </a>
+        <a href="/" class="block hot-item weui-grid">
+          <img src="../static/img/demo/goods2.png" alt="">
+          <p class="title lineclamp2">WHOO 地方地方</p>
+          <p class="red-font f32 text-center">￥88</p>
+          <p class="text-del f24 text-center">￥8888</p>
+        </a>
+        <a href="/" class="block hot-item weui-grid">
+          <img src="../static/img/demo/goods2.png" alt="">
+          <p class="title lineclamp2">WHOO 拱辰享水乳拱辰享水乳套盒拱辰享水乳套盒拱辰享水乳套盒套盒</p>
+          <p class="red-font f32 text-center">￥88</p>
+          <p class="text-del f24 text-center">￥8888</p>
+        </a>
+        <a href="/" class="block hot-item weui-grid">
+          <img src="../static/img/demo/goods2.png" alt="">
+          <p class="title lineclamp2">WHOO 拱辰享水乳套盒</p>
+          <p class="red-font f32 text-center">￥88</p>
+          <p class="text-del f24 text-center">￥8888</p>
+        </a>
+        <a href="/" class="block hot-item weui-grid">
+          <img src="../static/img/demo/goods2.png" alt="">
+          <p class="title lineclamp2">WHOO 地方地方</p>
+          <p class="red-font f32 text-center">￥88</p>
+          <p class="text-del f24 text-center">￥8888</p>
+        </a>
+        <a href="/" class="block hot-item weui-grid">
+          <img src="../static/img/demo/goods2.png" alt="">
+          <p class="title lineclamp2">WHOO 拱辰享水乳拱辰享水乳套盒拱辰享水乳套盒拱辰享水乳套盒套盒</p>
+          <p class="red-font f32 text-center">￥88</p>
+          <p class="text-del f24 text-center">￥8888</p>
+        </a>
+      </div>
+    </div>
+    <div class="more-goods-wrap">
+      <h1 class="title">更多好物</h1>
+      <div class="weui-grids">
+        <a href="/" class="block hot-item weui-grid">
+          <img src="../static/img/demo/goods12.png" alt="">
+          <p class="title lineclamp2">WHOO 拱辰享水乳拱辰享水乳套盒拱辰享水乳套盒拱辰享水乳套盒套盒</p>
+          <p class="price clearfix">
+            <span class="red-font f30">￥88</span>
+            <span class="text-del f24">￥8888</span>
+          </p>
+          <p class="icons-row clearfix">
+            <i class="icon-baoyou pull-left"></i>
+            <i class="icon-miaosha pull-left"></i>
+          </p>
+        </a>
+        <a href="/" class="block hot-item weui-grid">
+          <img src="../static/img/demo/goods13.png" alt="">
+          <p class="title lineclamp2">WHOO 拱辰享水乳拱辰享水乳套盒拱辰享水乳套盒拱辰享水乳套盒套盒</p>
+          <p class="price clearfix">
+            <span class="red-font f30">￥88</span>
+            <span class="text-del f24">￥8888</span>
+          </p>
+          <p class="icons-row clearfix">
+            <i class="icon-baoyou pull-left"></i>
+          </p>
+        </a>
+        <a href="/" class="block hot-item weui-grid">
+          <img src="../static/img/demo/goods14.png" alt="">
+          <p class="title lineclamp2">WHOO 拱辰享水乳拱辰享水乳套盒拱辰享水乳套盒拱辰享水乳套盒套盒</p>
+          <p class="price clearfix">
+            <span class="red-font f30">￥88</span>
+            <span class="text-del f24">￥8888</span>
+          </p>
+          <p class="icons-row clearfix">
+            <i class="icon-miaosha pull-left"></i>
+          </p>
+        </a>
+        <a href="/" class="block hot-item weui-grid">
+          <img src="../static/img/demo/goods2.png" alt="">
+          <p class="title lineclamp2">WHOO 拱辰享水乳拱辰享水乳套盒拱辰享水乳套盒拱辰享水乳套盒套盒</p>
+          <p class="price clearfix">
+            <span class="red-font f30">￥88</span>
+            <span class="text-del f24">￥8888</span>
+          </p>
+          <p class="icons-row clearfix">
+            <i class="icon-baoyou pull-left"></i>
+            <i class="icon-miaosha pull-left"></i>
+          </p>
+        </a>
+      </div>
+    </div>
+    <div class="actives-wrap">
+      <a href="/" class="block">
+        <img src="../static/img/demo/goods8.png" alt="">
+      </a>
+      <a href="/" class="block">
+        <img src="../static/img/demo/active3.png" alt="">
+      </a>
+      <a href="/" class="block">
+        <img src="../static/img/demo/active1.png" alt="">
+      </a>
+      <a href="/" class="block">
+        <img src="../static/img/demo/active2.png" alt="">
+      </a>
     </div>
   </div>
 
-
+  <div class="weui-tabbar fixed">
+    <a href="javascript:;" class="weui-tabbar__item weui-bar__item_on">
+      <div class="weui-tabbar__icon">
+        <img src="../static/img/icon-nav-home-active.png" alt="">
+      </div>
+      <p class="weui-tabbar__label">首页</p>
+    </a>
+    <a href="javascript:;" class="weui-tabbar__item">
+      <div class="weui-tabbar__icon">
+        <img src="../static/img/icon-nav-find.png" alt="">
+      </div>
+      <p class="weui-tabbar__label">发现</p>
+    </a>
+    <a href="javascript:;" class="weui-tabbar__item">
+      <div class="weui-tabbar__icon">
+        <img src="../static/img/icon-nav-shop.png" alt="">
+      </div>
+      <p class="weui-tabbar__label">店铺</p>
+    </a>
+    <a href="javascript:;" class="weui-tabbar__item">
+      <div class="weui-tabbar__icon">
+        <img src="../static/img/icon-nav-car.png" alt="">
+      </div>
+      <p class="weui-tabbar__label">购物车</p>
+    </a>
+    <a href="javascript:;" class="weui-tabbar__item">
+      <div class="weui-tabbar__icon">
+        <img src="../static/img/icon-nav-my.png" alt="">
+      </div>
+      <p class="weui-tabbar__label">我</p>
+    </a>
+  </div>
   <script src="//cdn.bootcss.com/jquery/1.11.0/jquery.min.js"></script>
   <script src="//cdn.bootcss.com/jquery-weui/0.8.3/js/jquery-weui.min.js"></script>
+  <script src="../static/js/lib/swiper.min.js"></script>
 <script>
   $(function() {
     $('.nav-item').on('click', function() {
       $('.nav-item').removeClass('active');
       $(this).addClass('active');
-    })
+    });
+
+    var navSwiper = new Swiper('.hot-goods-container', {
+      slidesPerView: 3.45,
+      freeMode: true,
+      on: {
+        init: function() {
+          navSlideWidth = this.slides.eq(0).css('width'); //导航字数需要统一,每个导航宽度一致
+          navSum = this.slides[this.slides.length - 1].offsetLeft //最后一个slide的位置
+          clientWidth = parseInt(this.$wrapperEl.css('width')) //Nav的可视宽度
+          navWidth = 0
+          for (i = 0; i < this.slides.length; i++) {
+            navWidth += parseInt(this.slides.eq(i).css('width'))
+          }
+          // topBar = this.$el.parents('body').find('#top') //页头
+        },
+
+      },
+    });
+
+    var bannerSwiper = new Swiper('.banner-wrap', {
+      loop: true,
+      pagination: {
+        el: '.swiper-pagination',
+        type: 'fraction',
+        renderFraction: function(currentClass, totalClass) {
+          return '<span class="' + currentClass + '"></span>' + '/' + '<span class="' + totalClass + '"></span>';
+        },
+      },
+    });
   });
 </script>
 </body>

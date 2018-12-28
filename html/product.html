@@ -6,51 +6,389 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <script src="../static/js/lib/rem.js"></script>
   <link rel="stylesheet" href="../static/css/base.css">
+  <link rel="stylesheet" href="../static/css/swiper.min.css">
+  <link rel="stylesheet" href="../static/css/icon.css">
   <link rel="stylesheet" href="../static/css/weui.min.css">
-  <link rel="stylesheet" href="../static/css/jquery-weui.min.css">
+  <link rel="stylesheet" href="../static/css/jq-weui.css">
   <link rel="stylesheet" href="../static/css/product.css">
   <title>shopping</title>
 </head>
-<body>  
-	<div class="goods-swiper-container">
-	  <div class="swiper-wrapper">
-	    <div class="swiper-slide"><img src="//gqianniu.alicdn.com/bao/uploaded/i4//tfscom/i1/TB1n3rZHFXXXXX9XFXXXXXXXXXX_!!0-item_pic.jpg_320x320q60.jpg" alt=""></div>
-	    <div class="swiper-slide"><img src="//gqianniu.alicdn.com/bao/uploaded/i4//tfscom/i4/TB10rkPGVXXXXXGapXXXXXXXXXX_!!0-item_pic.jpg_320x320q60.jpg" alt=""></div>
-	    <div class="swiper-slide"><img src="//gqianniu.alicdn.com/bao/uploaded/i4//tfscom/i1/TB1kQI3HpXXXXbSXFXXXXXXXXXX_!!0-item_pic.jpg_320x320q60.jpg" alt=""></div>
+<body>
+  <div class="product-header clearfix">
+    <a href="/" class="block pull-left">
+      <i class="icon-back"></i>
+    </a>
+    <a href="javascript:;" class="block pull-right open-popup" data-target="#postagePopup">
+      <i class="icon-share"></i>
+    </a>
+  </div>
+	<div class="main-page">
+    <div class="swiper-container goods-swiper-container">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="//gqianniu.alicdn.com/bao/uploaded/i4//tfscom/i1/TB1n3rZHFXXXXX9XFXXXXXXXXXX_!!0-item_pic.jpg_320x320q60.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="//gqianniu.alicdn.com/bao/uploaded/i4//tfscom/i4/TB10rkPGVXXXXXGapXXXXXXXXXX_!!0-item_pic.jpg_320x320q60.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="//gqianniu.alicdn.com/bao/uploaded/i4//tfscom/i1/TB1kQI3HpXXXXbSXFXXXXXXXXXX_!!0-item_pic.jpg_320x320q60.jpg" alt=""></div>
+      </div>
+      <div class="swiper-pagination"></div>
+      </div>
+      <!--商品价钱和秒杀-->
+      <div class="goods-price-block price-kill clearfix">
+        <div class="goods-price-tag">秒杀</div>
+        <div class="goods-price">
+          ¥16889～20880
+        </div>
+        <div class="goods-countdown">
+          <div class="countdown-title">距开始</div>
+          <div class="countdown-content">
+            <span class="countdown-block">1</span>
+            <span>天</span>
+            <span class="countdown-block">12</span>
+            <span>:</span>
+            <span class="countdown-block">59</span>
+            <span>:</span>
+            <span class="countdown-block">59</span>				
+          </div>
+        </div>
+      </div>  
+      <!--商品抢购-->
+      <div class="goods-price-block price-rushbuy clearfix">
+        <div class="goods-price-tag">限时抢购</div>
+        <div class="goods-price">
+          ¥16889～20880
+        </div>
+        <div class="goods-lefttime">
+          12日16:00开抢
+        </div>
+      </div>
+      <!--商品本来价格-->
+      <div class="goods-passprice">
+        <span class="red-font">199～2222.2</span>
+        <span class="gray-font f24">¥24440.00</span>
+      </div>
+      <div class="goods-weltip">
+        <img src="../static/img/icon-gold-card.png" alt="" />
+        <span class="f24">全球时刻会员省</span>
+        <span class="f32">¥99.00</span>
+        <a href="" class="oods-weltip-right">开通会员 <i class="icon-arrow-right iconDib"></i></a>
+      </div>
+      <div class="goods-weltip">
+        <img src="../static/img/icon-vip.png" alt="" />
+        <span class="f24">会员下单预计减免</span>
+        <span class="f32">¥99.00</span>		
+      </div>
+      <!--商品具体详情-->
+      <div class="goods-detail-one">
+        <div class="details-1 clearfix">
+          <div class="goods-detail-name lineclamp2">
+            台仕朵原味奶茶台仕朵原味奶茶台仕朵原味奶茶台仕朵原味奶茶台仕朵原味奶茶台仕朵原味奶茶台仕朵原味奶茶台仕朵原味奶茶
+          </div>
+          <div class="goods-detail-save active">		
+            <i class="icon-favorite"></i>
+            <span class="f24">收藏</span>
+            <div class="save-line"></div>
+          </div>
+        </div>
+        <div class="details-2 clearfix">
+          <p>预售至高享8件礼 沁白修护 美肌白成一道光预售至高享8件礼 沁白修护 美肌白成一道光预售至高享8件礼 沁白修护 美肌白成一道光</p>
+        </div>		
+      </div>
+      <div class="split-line"></div>
+      <div class="goods-ensure clearfix">
+        <ul class="clearfix fl">
+          <li>
+            <img src="../static/img/icon-real.png" alt="" />
+            <span>100%苛选正品 </span>
+          </li>
+          <li>
+            <img src="../static/img/icon-pay.png" alt="" />
+            <span>100%超时赔付品 </span>
+          </li>
+          <li>
+            <img src="../static/img/icon-return.png" alt="" />
+            <span>30天无理由退换 </span>
+          </li>
+        </ul>
+        <i class="icon-arrow-right fr"></i>
+      </div>
+      <div class="splitbold-line"></div>
+      <!--系列参数-->
+      <ul class="goods-basiclist">
+        <li class="basicitem clearfix">
+          <div class="basicitem-name">跨境税</div>
+          <div class="basicitem-param">本商品平台包税，无需额外缴纳</div>
+          <i class="icon-arrow-right"></i>
+        </li>
+        <div class="split-line"></div>
+        <li class="basicitem clearfix">
+          <div class="basicitem-name">促销</div>
+          <div class="basicitem-param red-font">100元任选5件</div>
+          <i class="icon-arrow-right"></i>
+        </li>
+        <div class="split-line"></div>
+        <li class="basicitem clearfix" data-popid="couponmodal">
+          <a href="javascript:;" class="block open-popup clearfix" data-target="#couponPopup">
+            <div class="basicitem-name">领券</div>
+            <div class="basicitem-param red-font">满1000减200元优惠券</div>
+            <i class="icon-arrow-right"></i>
+          </a>
+        </li>
+        <div class="split-line"></div>
+        <li class="basicitem clearfix">
+          <div class="basicitem-name">运费</div>
+          <div class="basicitem-param">满99元免运费</div>
+          <i class="icon-arrow-right"></i>
+        </li>
+        <div class="split-line"></div>
+        <li class="basicitem clearfix">
+          <div class="basicitem-name">说明</div>
+          <div class="basicitem-param">巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉</div>
+          <i class="icon-arrow-right"></i>
+        </li>
+      </ul>
+      <div class="splitbold-line"></div>
+      <!--店铺链接-->
+      <a href="" class="shopbox clearfix">
+        <div class="imgbox">
+          <img src="../static/img/demo/head.png" alt="" />
+        </div>
+        <div class="shop-content">
+          <h4 class="f32 text-overflow">田某某</h4>
+          <p class="lineclamp2 gray-font">店铺说明店铺说明店铺说明店铺说明店铺说明店铺说明店铺说明店铺说明店铺说明店铺说明</p>
+        </div>
+      </a>
+      <div class="splitbold-line"></div>
+      <!--店铺详情页-->
+      <div class="goods-detail-two">
+        <img src="../static/img/demo/banner3.png" alt="">
+      </div>
+  </div>
+  <!-- footer1 -->
+  <div class="product-footer clearfix" style="display: none">
+    <div class="page-links pull-left weui-flex">
+      <a href="/" class="link block weui-flex__item text-center">
+        <i class="icon-home"></i>
+        <span>首页</span>
+      </a>
+      <a href="/" class="link block weui-flex__item text-center">
+        <i class="icon-shoppingcar"></i>
+        <span>购物车</span>
+      </a>
+    </div>
+    <div class="btn btn-add-car pull-left">
+      加入购物车
+    </div>
+    <div class="btn btn-buy pull-left">
+      立即购买
+    </div>
+  </div>
+  <!-- footer2 -->
+  <div class="product-footer product-footer2 clearfix">
+    <div class="page-links pull-left weui-flex">
+      <a href="/" class="link block weui-flex__item text-center">
+        <i class="icon-home"></i>
+        <span>首页</span>
+      </a>
+      <a href="/" class="link block weui-flex__item text-center link-car">
+        <i class="icon-shoppingcar"></i>
+        <span>购物车</span>
+        <span class="num">3</span>
+      </a>
+    </div>
+    <div class="btn btn-add-car pull-left">
+      加入购物车
+    </div>
+  </div>
+  <!-- 回到顶部按钮 -->
+  <i class="scroll-top"></i>
+	<!--弹出框说明系列-->
+  <!--优惠券弹出框-->
+  <div class="weui-popup-container coupon-popup popup-bottom" id="couponPopup">
+    <div class="weui-popup-overlay"></div>
+    <div class="weui-popup-modal">
+      <div class="head clearfix">
+        <p class="title pull-left">优惠券</p>
+        <a href="javascript:;" class="pull-right close-popup">
+          <i class="icon-close"></i>
+        </a>
+      </div>
+      <div class="main">
+        <ul class="couponDialog-list">
+          <li class="clearfix">
+            <div class="coupon-left">
+              <div class="coupon-left-price"><span>¥</span><span>30</span></div>
+              <div class="coupon-left-line"></div>
+              <div class="f24">满100可用</div>
+            </div>
+            <div class="coupon-right"></div>
+          </li>
+          <li class="clearfix">
+            <div class="coupon-left">
+              <div class="coupon-left-price"><span>¥</span><span>30</span></div>
+              <div class="coupon-left-line"></div>
+              <div class="f24">满100可用</div>
+            </div>
+            <div class="coupon-right"></div>
+          </li>
+          <li class="clearfix">
+            <div class="coupon-left">
+              <div class="coupon-left-price"><span>¥</span><span>30</span></div>
+              <div class="coupon-left-line"></div>
+              <div class="f24">满100可用</div>
+            </div>
+            <div class="coupon-right"></div>
+          </li>
+          <li class="clearfix">
+            <div class="coupon-left">
+              <div class="coupon-left-price"><span>¥</span><span>30</span></div>
+              <div class="coupon-left-line"></div>
+              <div class="f24">满100可用</div>
+            </div>
+            <div class="coupon-right"></div>
+          </li>
+          <li class="clearfix">
+            <div class="coupon-left">
+              <div class="coupon-left-price"><span>¥</span><span>30</span></div>
+              <div class="coupon-left-line"></div>
+              <div class="f24">满100可用</div>
+            </div>
+            <div class="coupon-right"></div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+	<div class="modal-outter couponDialog" style="display: none;">
+		<div class="modal-title">
+			<h4>优惠券</h4>
+		</div>
+		<div class="modal-close"></div>
+		<div class="modal-content">
+			<ul class="couponDialog-list">
+				<li class="clearfix">
+					<div class="coupon-left">
+						<div class="coupon-left-price"><span>¥</span><span>30</span></div>
+						<div class="coupon-left-line"></div>
+						<div class="f24">满100可用</div>
+					</div>
+					<div class="coupon-right"></div>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div id="couponmodal" class="weui-popup-container" style="display: none;">
+	  <div class="weui-popup-overlay"></div>
+	  <div class="weui-popup-modal">
+	    <div class="modal-outter">
+	    	<div class="modal-title">
+	    		<h4>优惠券</h4>
+	    	</div>
+	    	<div class="modal-content">
+	    		<ul>
+	    			<li>
+	    				<div class="coupon-left"></div>
+	    				<div class="coupon-right"></div>
+	    			</li>
+	    		</ul>
+	    	</div>
+	    </div>
 	  </div>
-	</div>
-	<!--商品价钱和秒杀-->
-	<div class="goods-price-block price-kill clearfix">
-		<div class="goods-price-tag">秒杀</div>
-		<div class="goods-price">
-			¥16889～20880
-		</div>
-		<div class="goods-countdown">
-			<div class="countdown-title">距开始</div>
-			<div class="countdown-content">
-				<span class="countdown-block">1</span>
-				<span>天</span>
-				<span class="countdown-block">12</span>
-				<span>:</span>
-				<span class="countdown-block">59</span>
-				<span>:</span>
-				<span class="countdown-block">59</span>				
-			</div>
-		</div>
-	</div>  
-	<!--商品本来价格-->
-	<div class="goods-passprice">
-		<span class="red-font">199～2222.2</span>
-		<span class="gray-font f24">¥24440.00</span>
-	</div>
+  </div>
+  <!-- 分享弹窗一 -->
+  <div class="weui-popup-container share-popup popup-bottom" id="sharePopup1">
+    <div class="weui-popup-overlay"></div>
+    <div class="weui-popup-modal">
+      <p class="title">赚10.01元</p>
+      <p class="tip">只要你的好友通过你的链接购买此商品，你就能赚到10.01元利润</p>
+      <div class="share-type weui-flex">
+        <div class="weui-flex__item item text-center">
+          <i class="icon-link"></i>
+          <p>复制链接</p>
+        </div>
+        <div class="weui-flex__item item text-center">
+          <i class="icon-code"></i>
+          <p>商品二维码</p>
+        </div>
+        <div class="weui-flex__item item text-center">
+          <i class="icon-share-wx"></i>
+          <p>微信好友</p>
+        </div>
+        <div class="weui-flex__item item text-center">
+          <i class="icon-share-wxcircle"></i>
+          <p>朋友圈</p>
+        </div>
+      </div>
+      <a href="javascript:;" class="btn-close close-popup">
+        <i></i>
+      </a>
+    </div>
+  </div>
+  <!-- 分享弹窗二 -->
+  <div class="weui-popup-container share-popup popup-bottom" id="sharePopup2">
+    <div class="weui-popup-overlay"></div>
+    <div class="weui-popup-modal">
+      <p class="title">分享到</p>
+      <div class="share-type weui-flex">
+        <div class="weui-flex__item item text-center">
+          <i class="icon-link"></i>
+          <p>复制链接</p>
+        </div>
+        <div class="weui-flex__item item text-center">
+          <i class="icon-share-wx"></i>
+          <p>微信好友</p>
+        </div>
+        <div class="weui-flex__item item text-center">
+          <i class="icon-share-wxcircle"></i>
+          <p>朋友圈</p>
+        </div>
+      </div>
+      <a href="javascript:;" class="btn-close close-popup">
+        <i></i>
+      </a>
+    </div>
+  </div>
+  <!-- 油费政策弹窗 -->
+  <div class="weui-popup-container postage-popup popup-bottom" id="postagePopup">
+    <div class="weui-popup-overlay"></div>
+    <div class="weui-popup-modal">
+      <div class="head clearfix">
+        <p class="title pull-left">全球时刻邮费政策</p>
+        <a href="javascript:;" class="pull-right close-popup">
+          <i class="icon-close"></i>
+        </a>
+      </div>
+      <div class="main">
+        <p>平台单笔订单实付满99元可享受国内部分地区包邮，港澳台暂不发货。 </p>
+        <p>1.拍下商品全部为单品包邮的订单，任意实付金额都可享受包邮。 </p>
+        <p>2.一件包邮商品+部分包邮商品，订单实付满99元，拍下享受包邮。 </p>
+        <p>3.一件包邮商品+部分包邮商品，订单实付未满99元，同一供货商享受包邮，不同供货商需支付邮费。 </p>
+      </div>
+    </div>
+  </div>
   <script src="//cdn.bootcss.com/jquery/1.11.0/jquery.min.js"></script>
   <script src="//cdn.bootcss.com/jquery-weui/0.8.3/js/jquery-weui.min.js"></script>
-  <script src="../static/js/lib/swiper.js"></script>
+  <script src="../static/js/lib/swiper.min.js"></script>
   <script type="text/javascript">
-  	$(function() {  		
-  		$(".goods-swiper-container").swiper({
+  	$(function() {
+
+      // 收藏及取消
+      $('.goods-detail-save').on('click', function () {
+        $(this).toggleClass('active');
+      })
+
+      $('.scroll-top').click(function() {
+        $("html,body").animate({scrollTop:0},"fast");
+      });
+
+
+      var bannerSwiper = new Swiper('.goods-swiper-container', {
         loop: true,
-        autoplay: 3000
+        pagination: {
+          el: '.swiper-pagination',
+          type: 'fraction',
+          renderFraction: function(currentClass, totalClass) {
+            return '<span class="' + currentClass + '"></span>' + '/' + '<span class="' + totalClass + '"></span>';
+          },
+        },
       });
   	});
   </script>
