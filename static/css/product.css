@@ -65,3 +65,11 @@
 	text-decoration: line-through;
 	margin-left: 0.16rem;
 }
+.goods-weltip{
+	width:7.1rem;
+	height:0.72rem;
+	padding:0.2rem;
+	box-sizing: border-box;
+	background:rgba(242,242,242,1);
+	border:1px solid rgba(225,225,225,1);
+}
