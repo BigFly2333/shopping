@@ -52,3 +52,9 @@ table {
 .text-center {
   text-align: center!important;
 }
+.pull-left {
+  float: left!important;
+}
+.pull-right {
+  float: right!important;
+}

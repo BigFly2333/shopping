@@ -9,22 +9,67 @@
   <link rel="stylesheet" href="../static/css/base.css">
   <link rel="stylesheet" href="../static/css/weui.min.css">
   <link rel="stylesheet" href="../static/css/jquery-weui.min.css">
+  <link rel="stylesheet" href="../static/css/index.css">
   <title>shopping</title>
 </head>
 <body>
-  <div class="weui-search-bar" id="searchBar">
-    <form class="weui-search-bar__form">
-      <div class="weui-search-bar__box">
-        <i class="weui-icon-search"></i>
-        <input type="search" class="weui-search-bar__input" id="searchInput" placeholder="搜索" required="">
-        <a href="javascript:" class="weui-icon-clear" id="searchClear"></a>
+  <div class="search-bar-wrap clearfix">
+    <a href="/" class="pull-left user-head">
+      <img src="../static/img/demo/head.png" alt="">
+    </a>
+    <div class="search-input-row">
+      <i class="icon-search"></i>
+      <input class="weui-input" type="text" placeholder="请输入关键字">
+    </div>
+    <div class="share-btn pull-right">
+      <i class="icon-share"></i>
+      <!-- 分享 -->
+    </div>
+  </div>
+  <div class="nav-bar-wrap">
+    <ul class="nav-bar clearfix">
+      <li class="nav-item active">
+        <span>推荐</span>
+      </li>
+      <li class="nav-item">
+        <span>美妆</span>
+      </li>
+      <li class="nav-item">
+        <span>食品</span>
+      </li>
+      <li class="nav-item">
+        <span>日用</span>
+      </li>
+      <li class="nav-item">
+        <span>保健</span>
+      </li>
+      <li class="nav-item">
+        <span>母婴</span>
+      </li>
+    </ul>
+  </div>
+  <div class="main-page">
+    <div class="banner-wrap">
+        <ul class="items-wrap">
+          <li class="item">
+            <img src="../static/img/demo/banner2.png" alt="">
+          </li>
+        </ul>
       </div>
-      <label class="weui-search-bar__label" id="searchText">
-        <i class="weui-icon-search"></i>
-        <span>搜索</span>
-      </label>
-    </form>
-    <a href="javascript:" class="weui-search-bar__cancel-btn" id="searchCancel">取消</a>
+      <p class="advantage-wrap clearfix">
+        <p class="item pull-left">
+          <i></i>
+          自购轻松省
+        </p>
+        <p class="item">
+          <i></i>
+          分享简单赚
+        </p>
+        <p class="item">
+          <i></i>
+          100%正品保证
+        </p>
+      </div>
   </div>
 
 
@@ -32,7 +77,10 @@
   <script src="//cdn.bootcss.com/jquery-weui/0.8.3/js/jquery-weui.min.js"></script>
 <script>
   $(function() {
-
+    $('.nav-item').on('click', function() {
+      $('.nav-item').removeClass('active');
+      $(this).addClass('active');
+    })
   });
 </script>
 </body>
