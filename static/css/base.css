@@ -58,21 +58,63 @@ table {
 .pull-right {
   float: right!important;
 }
-.red-font{
-	color: #D61518;
+.red-font {
+	color: #D61518!important;
 }
-.gray-font{
-	color: #666666;
+.gray-font {
+	color: #666666!important;
 }
-.f24{
+.f24 {
 	font-size: 0.24rem;
 }
-.f26{
+.f26 {
 	font-size: 0.26rem;
 }
-.f28{
+.f28 {
 	font-size: 0.28rem;
 }
-.f60{
+.f32 {
+	font-size: 0.32rem;
+}
+.f60 {
 	font-size: 0.6rem;
+}
+.text-overflow {
+  white-space:nowrap;
+  overflow:hidden;
+  text-overflow:ellipsis;
+}
+.circle-btn {
+  display: inline-block;
+  height: .36rem;
+  font-size: .2rem;
+  color: #F14652;
+  line-height: calc(.36rem - 2px);
+  border:1px solid rgba(241,70,82,1);
+  padding: 0 .14rem;
+  border-radius: .18rem;
+}
+.block {
+  display: block;
+}
+.line-clamp-2 {
+  overflow : hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+h1.title {
+  line-height: 1.04rem;
+  font-size: .32rem;
+  color: #333;
+  text-align: center;
+}
+.banner-300 {
+  width: 100%;
+  height: 3rem;
+}
+.banner-300 img {
+  width: 100%;
+  height: 100%;
 }
