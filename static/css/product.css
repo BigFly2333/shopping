@@ -68,8 +68,47 @@
 .goods-weltip{
 	width:7.1rem;
 	height:0.72rem;
-	padding:0.2rem;
-	box-sizing: border-box;
+	padding:0.2rem;	
 	background:rgba(242,242,242,1);
 	border:1px solid rgba(225,225,225,1);
+	margin: 0 auto;
+	line-height: 0.32rem;
+}
+.goods-weltip img{
+	height: 0.32rem;
+	margin-right: 0.16rem;
+	vertical-align: top;
+}
+.goods-weltip .f32.price{
+	margin-left: 0.8rem;
+}
+.goods-weltip a{
+	float:right;
+	font-size: 0.24rem;
+	text-decoration: none;
+}
+.goods-weltip a:hover,.goods-weltip a:focus{
+	color: #333;
+	text-decoration: none;
+}
+.goods-detail-one{
+	padding: 0 0.2rem;
+	
+}
+.goods-detail-name{
+	line-height: 0.4rem;
+	font-size: 0.28rem;
+	height: 0.8rem;	
+	float: left;
+	width: 5.4rem;
+}
+.goods-detail-save{
+	float: right;
+}
+.goods-detail-save{
+	float: right;
+	height: 0.8rem;
+}
+.goods-detail-save .save-line{
+	
 }

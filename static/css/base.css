@@ -73,6 +73,34 @@ table {
 .f28{
 	font-size: 0.28rem;
 }
+.f32{
+	font-size: 0.32rem;
+}
 .f60{
 	font-size: 0.6rem;
 }
+.flex-row{
+	flex-direction: row;
+	align-items: center;
+}
+.flex-column{
+	flex-direction: column;
+}
+.lineclamp2{
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical;
+}
+.lineclamp3{
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical;
+}
+.text-overflow{
+	text-overflow: ellipsis;
+}
+
