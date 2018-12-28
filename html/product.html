@@ -4,17 +4,55 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="//cdn.bootcss.com/weui/0.4.3/style/weui.min.css">
-  <link rel="stylesheet" href="//cdn.bootcss.com/jquery-weui/0.8.3/css/jquery-weui.min.css">
+  <script src="../static/js/lib/rem.js"></script>
+  <link rel="stylesheet" href="../static/css/base.css">
+  <link rel="stylesheet" href="../static/css/weui.min.css">
+  <link rel="stylesheet" href="../static/css/jquery-weui.min.css">
+  <link rel="stylesheet" href="../static/css/product.css">
   <title>shopping</title>
 </head>
-<body>
-  <div>你好测试</div>
-  <div class="container-wrap">
-  	
-  </div>
-  <script src="../static/js/lib/rem.js"></script>
+<body>  
+	<div class="goods-swiper-container">
+	  <div class="swiper-wrapper">
+	    <div class="swiper-slide"><img src="//gqianniu.alicdn.com/bao/uploaded/i4//tfscom/i1/TB1n3rZHFXXXXX9XFXXXXXXXXXX_!!0-item_pic.jpg_320x320q60.jpg" alt=""></div>
+	    <div class="swiper-slide"><img src="//gqianniu.alicdn.com/bao/uploaded/i4//tfscom/i4/TB10rkPGVXXXXXGapXXXXXXXXXX_!!0-item_pic.jpg_320x320q60.jpg" alt=""></div>
+	    <div class="swiper-slide"><img src="//gqianniu.alicdn.com/bao/uploaded/i4//tfscom/i1/TB1kQI3HpXXXXbSXFXXXXXXXXXX_!!0-item_pic.jpg_320x320q60.jpg" alt=""></div>
+	  </div>
+	</div>
+	<!--商品价钱和秒杀-->
+	<div class="goods-price-block price-kill clearfix">
+		<div class="goods-price-tag">秒杀</div>
+		<div class="goods-price">
+			¥16889～20880
+		</div>
+		<div class="goods-countdown">
+			<div class="countdown-title">距开始</div>
+			<div class="countdown-content">
+				<span class="countdown-block">1</span>
+				<span>天</span>
+				<span class="countdown-block">12</span>
+				<span>:</span>
+				<span class="countdown-block">59</span>
+				<span>:</span>
+				<span class="countdown-block">59</span>				
+			</div>
+		</div>
+	</div>  
+	<!--商品本来价格-->
+	<div class="goods-passprice">
+		<span class="red-font">199～2222.2</span>
+		<span class="gray-font f24">¥24440.00</span>
+	</div>
   <script src="//cdn.bootcss.com/jquery/1.11.0/jquery.min.js"></script>
   <script src="//cdn.bootcss.com/jquery-weui/0.8.3/js/jquery-weui.min.js"></script>
+  <script src="../static/js/lib/swiper.js"></script>
+  <script type="text/javascript">
+  	$(function() {  		
+  		$(".goods-swiper-container").swiper({
+        loop: true,
+        autoplay: 3000
+      });
+  	});
+  </script>
 </body>
 </html>
