@@ -74,20 +74,23 @@
 }
 .nav-bar-wrap .nav-item {
   float: left;
-  padding: 0 .3rem;
+  padding: 0 .28rem;
   color: #333;
   font-size: .28rem;
+}
+.nav-bar-wrap .nav-item a {
+  color: #333;
 }
 .nav-bar-wrap .nav-item:first-child {
   padding-left: .1rem;
 }
-.nav-bar-wrap .nav-item.active {
+.nav-bar-wrap .nav-item.active a {
   color: #D61518;
 }
-.nav-bar-wrap .nav-item span {
+.nav-bar-wrap .nav-item a {
   position: relative;
 }
-.nav-bar-wrap .nav-item.active span::after {
+.nav-bar-wrap .nav-item.active a::after {
   position: absolute;
   content: "";
   left: 50%;
@@ -96,6 +99,17 @@
   width: .26rem;
   height: .06rem;
   background: #D61518;
+}
+.nav-bar-wrap .nav-item.btn-nav-more {
+  padding: 0;
+  padding-left: .1rem;
+}
+.nav-bar-wrap .nav-item .icon-more {
+  display: block;
+  height: .44rem;
+  width: .5rem;
+  background: url(../img/icon-nav-more.png) no-repeat center;
+  background-size: contain!important;
 }
 .main-page {
   width: 100%;
@@ -121,6 +135,12 @@
   display: inline-block;
   color: #333;
   padding-left: .36rem;
+  line-height: .4rem;
+}
+.advantage-wrap .item i {
+  position: absolute;
+  left: 0;
+  top: .1rem;
 }
 .banner-open-shop {
   display: block;
@@ -339,4 +359,50 @@
 /* circle-btn-mini */
 .circle-btn.circle-btn-mini {
   padding: 0 .08rem;
+}
+
+
+.nav-more {
+  position: fixed;
+  top: .96rem;
+  left: 0;
+  height: auto;
+  width: 100%;
+  background: #fff;
+  z-index: 600;
+  padding: .28rem .32rem .4rem;
+  transform: translate(0, -100%);
+  opacity: 0;
+  transition: all .4s cubic-bezier(.4,0,.2,1);
+}
+.nav-more.show {
+  transform: translate(0, 0);
+  opacity: 1;
+}
+.mod {
+  position: fixed;
+  top: .96rem;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(51,51,51,0.5);
+  z-index: 550;
+  opacity: 0;
+  transition: all .4s cubic-bezier(.4,0,.2,1);
+  display: none;
+}
+.mod.show {
+  opacity: 1;
+}
+.nav-more .nav-list-wrap {
+  margin-top: .4rem;
+}
+.nav-more .nav-item {
+  text-align: center;
+  font-size: .28rem;
+  line-height: .8rem;
+  color: #333;
+}
+.nav-more .nav-item.active {
+  color: #E50011;
 }

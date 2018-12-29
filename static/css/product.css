@@ -154,17 +154,17 @@ background:rgba(214,21,21,1);
 	line-height:0.4rem;
 	margin:0.3rem 0 0.2rem 0;	
 }
-.goods-ensure{
-	padding:0.2rem;
+.goods-ensure {
+	padding: 0.2rem;
 }
-.goods-ensure li{
+.goods-ensure li {
 	float: left;
 	margin-left: 0.25rem;
 	color: #666;
 	font-size: 0.24rem;
 	line-height: 0.24rem;	
 }
-.goods-ensure li:first-child{
+.goods-ensure li:first-child {
 	margin-left: 0;
 }
 .goods-ensure li img{
@@ -415,4 +415,124 @@ background:rgba(214,21,21,1);
   padding: .24rem 0 .7rem;
   max-height: 7.34rem;
   overflow: auto;
+}
+
+.specselect-popup .goods-info-head {
+  position: relative;
+  padding: .32rem;
+  padding-left: 2.08rem;
+  padding-bottom: 0;
+  min-height: 2.08rem;
+}
+.specselect-popup .goods-info-head img {
+  position: absolute;
+  display: block;
+  height: 1.44rem;
+  width: 1.44rem;
+  top: .32rem;
+  left: .32rem;
+}
+.specselect-popup .goods-info-head .info p {
+  color: #999;
+  font-size: .26rem;
+  line-height: .5rem;
+}
+.specselect-popup .goods-info-head .icon-close {
+  position: absolute;
+  right: .32rem;
+  top: .32rem;
+}
+.specselect-popup .main {
+  width: 100%;
+  padding: 0 .32rem;
+  max-height: 6rem;
+  overflow: auto;
+  overflow-x: hidden;
+}
+.specselect-popup .spec-item-wrap {
+  padding: .32rem 0;
+  border-bottom: 1px solid #ddd;
+}
+.specselect-popup .spec-item-wrap:last-child {
+  border-bottom: none;
+}
+.specselect-popup .spec-item-wrap .title {
+  color: #999;
+  font-size: .26rem;
+  margin-bottom: .1rem;
+}
+.specselect-popup .spec-item-wrap .spec-item {
+  float: left;
+  height: .52rem;
+  line-height: calc(.52rem - 2px);
+  padding: 0 .32rem;
+  border-radius: .04rem;
+  border: #666 1px solid;
+  color: #666;
+  text-align: center;
+  font-size: .26rem;
+  margin: .12rem auto;
+  margin-right: .32rem;
+}
+.specselect-popup .spec-item-wrap .spec-item.disabled {
+  color: #999;
+  border: 1px dashed #E2E2E2;
+}
+.specselect-popup .spec-item-wrap .spec-item.active {
+  background: #D61518;
+  border: 1px solid #D61518;
+  color: #fff;
+}
+.specselect-popup .spec-item-wrap .count-num {
+  position: relative;
+  width: 2rem;
+  height: .62rem;
+  padding: 0 .6rem;
+  border: 1px solid rgba(240,240,240,1);
+  border-radius: .04rem;
+}
+.specselect-popup .spec-item-wrap .count-num input {
+  width: 100%;
+  height: .6rem;
+  padding: .1rem;
+  line-height: .4rem;
+  color: #333;
+  font-size: .26rem;
+  text-align: center;
+}
+.specselect-popup .spec-item-wrap .count-num span {
+  position: absolute;
+  top: 0;
+  display: block;
+  width: .6rem;
+  height: .6rem;
+  text-align: center;
+  background: #F0F0F0;
+  color: #333;
+}
+.specselect-popup .spec-item-wrap .count-num span.disabled {
+  background: #F2F2F2;
+  color: #999;
+}
+.specselect-popup .spec-item-wrap .count-num .num-minus {
+  left: 0;
+}
+.specselect-popup .spec-item-wrap .count-num .num-add {
+  right: 0;
+}
+.specselect-popup .specselect-popup-footer {
+  height: 1.12rem;
+}
+.specselect-popup .specselect-popup-footer p{
+  color: #fff;
+  height: 100%;
+  line-height: 1.12rem;
+  text-align: center;
+  font-size: .28rem;
+}
+.specselect-popup .specselect-popup-footer .btn-addcar {
+  background: #333333;
+}
+.specselect-popup .specselect-popup-footer .btn-buy {
+  background: #D61518;
 }

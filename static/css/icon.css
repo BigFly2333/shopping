@@ -78,7 +78,23 @@
 	display: block;
 	width: 0.4rem;
 	height: 0.4rem;	
-	background: url(../img/icon-close.png) no-repeat center;
+	background: url(../img/icon-close-big.png) no-repeat center;
+	background-size: contain!important;
+  margin: auto;
+}
+.icon-gou {
+	display: block;
+	width: 0.2rem;
+	height: 0.2rem;	
+	background: url(../img/icon-gou-red.png) no-repeat center;
+	background-size: contain!important;
+  margin: auto;
+}
+.icon-close-sm {
+	display: block;
+	width: 0.5rem;
+	height: 0.38rem;	
+	background: url(../img/icon-close-sm.png) no-repeat center;
 	background-size: contain!important;
   margin: auto;
 }

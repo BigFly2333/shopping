@@ -75,19 +75,19 @@ table {
 	color: #666666!important;
 }
 .f24 {
-	font-size: 0.24rem;
+	font-size: 0.24rem!important;
 }
 .f26 {
-	font-size: 0.26rem;
+	font-size: 0.26rem!important;
 }
 .f28 {
-	font-size: 0.28rem;
+	font-size: 0.28rem!important;
 }
 .f32 {
-	font-size: 0.32rem;
+	font-size: 0.32rem!important;
 }
 .f60 {
-	font-size: 0.6rem;
+	font-size: 0.6rem!important;
 }
 .text-overflow {
   white-space:nowrap;
@@ -187,6 +187,29 @@ h1.title {
 	background:rgba(0,0,0,.3);
 }
 
+/* 页面头部 */
+.header {
+  position: fixed;
+  width: 100%;
+  left: 0;
+  top: 0;
+  height: .88rem;
+  line-height: .88rem;
+  text-align: center;
+  color: #333;
+  font-size: .36rem;
+  box-shadow:0px .03rem .07rem 0px rgba(0, 0, 0, 0.1);
+  background: #fff;
+  z-index: 8;
+}
+.header .icon-back {
+  position: absolute;
+  left: .36rem;
+  top: 0;
+  height: .88rem;
+  width: .42rem;
+}
+
 /* popup公共部分 */
 .weui-popup-container .head {
   width: 100%;
@@ -204,16 +227,16 @@ h1.title {
 }
 
 /* 优惠券 */
-.couponDialog-list{
+.coupon-list{
 	padding: 0 0.2rem;
 }
-.couponDialog-list li{
+.coupon-list li{
 	margin-bottom: 0.15rem;
 	height:2rem;
 	background: #fff;
 	border-radius: 0.06rem;
 }
-.couponDialog-list li .coupon-left{
+.coupon-list li .coupon-left{
 	width: 2.1rem;
 	height: 2rem;	
 	background: url(../img/coupon.png) no-repeat center;
@@ -222,21 +245,69 @@ h1.title {
 	text-align: center;
 	color: #fff;
 }
-.couponDialog-list li .coupon-left .coupon-left-price{
+.coupon-list li .coupon-left .coupon-left-price{
 	line-height: 0.8rem;
 	margin-top: 0.3rem;	
-	
 }
-.couponDialog-list li .coupon-left .coupon-left-price>span:first-child{
+.coupon-list li .coupon-left .coupon-left-price>span:first-child{
 	font-size: 0.24rem;	
 }
-.couponDialog-list li .coupon-left .coupon-left-price>span:first-child+span{
+.coupon-list li .coupon-left .coupon-left-price>span:first-child+span{
 	font-size: 0.8rem;
 }
-.couponDialog-list li .coupon-left .coupon-left-line{
+.coupon-list li .coupon-left .coupon-left-line{
 	width: 80%;
 	margin: 0 auto;
 	height: 1px;
 	background: #fff;
 	margin-bottom: 0.1rem;
+}
+.coupon-list .coupon-right {
+  position: relative;
+  width: calc(100% - 2.1rem);
+  height: 2rem;
+  float: right;
+  padding: 0.1rem .24rem .22rem .26rem;
+}
+.coupon-list .coupon-right .type {
+  color: #999;
+  font-size: .2rem;
+  border-bottom: rgba(242,242,242,1) 1px dashed;
+  line-height: .5rem;
+}
+.coupon-list .coupon-right .type span {
+  color: #FF5229;
+}
+.coupon-list .coupon-right .title {
+  font-size: .32rem;
+  color: #333;
+  margin-top: .1rem;
+}
+.coupon-list .coupon-right .date {
+  position: absolute;
+  left: .26rem;
+  bottom: .22rem;
+  font-size: .2rem;
+  color: #999;
+  line-height: .24rem;
+}
+.coupon-list .coupon-right .btn-take {
+  position: absolute;
+  bottom: .22rem;
+  right: .14rem;
+  height: .48rem;
+  line-height: calc(.48rem - 2px);
+  border-radius: .24rem;
+  padding: 0;
+  width: 1.24rem;
+  text-align: center;
+}
+.coupon-list .coupon-right .btn-take.btn-taken {
+  border: none;
+  background: #D8D8D8;
+  color: #fff;
+  line-height: .48rem;
+}
+.weui-popup-modal {
+  background: #fff!important;
 }

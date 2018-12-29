@@ -30,24 +30,47 @@
   <div class="nav-bar-wrap">
     <ul class="nav-bar clearfix">
       <li class="nav-item active">
-        <span>推荐</span>
+        <a href="/">推荐</a>
       </li>
       <li class="nav-item">
-        <span>美妆</span>
+        <a href="/">美妆</a>
       </li>
       <li class="nav-item">
-        <span>食品</span>
+        <a href="/">食品</a>
       </li>
       <li class="nav-item">
-        <span>日用</span>
+        <a href="/">日用</a>
       </li>
       <li class="nav-item">
-        <span>保健</span>
+        <a href="/">保健</a>
       </li>
       <li class="nav-item">
-        <span>母婴</span>
+        <a href="/">母婴</a>
+      </li>
+      <li class="nav-item btn-nav-more">
+        <i class="icon-more"></i>
       </li>
     </ul>
+  </div>
+  <div class="mod"></div>
+  <div class="nav-more">
+    <p class="nav-more-head clearfix">
+      <span class="block pull-left f28">全部频道</span>
+      <i class="icon-close-sm pull-right"></i>
+    </p>
+    <div class="weui-row nav-list-wrap">
+      <a href="/" class="weui-col-20 nav-item active">推荐</a>
+      <a href="/" class="weui-col-20 nav-item">美妆护肤</a>
+      <a href="/" class="weui-col-20 nav-item">食品</a>
+      <a href="/" class="weui-col-20 nav-item">日用品</a>
+      <a href="/" class="weui-col-20 nav-item">母婴</a>
+      <a href="/" class="weui-col-20 nav-item">的积分</a>
+      <a href="/" class="weui-col-20 nav-item">宋地方就</a>
+      <a href="/" class="weui-col-20 nav-item">商店里就</a>
+      <a href="/" class="weui-col-20 nav-item">送到覅就</a>
+      <a href="/" class="weui-col-20 nav-item">扫地机发</a>
+      <a href="/" class="weui-col-20 nav-item">扫地机发</a>
+    </div>
   </div>
   <div class="main-page">
     <!-- <div class="banner-wrap">
@@ -70,15 +93,15 @@
     </div>
     <div class="advantage-wrap clearfix">
       <p class="item f24 pull-left">
-        <i></i>
+        <i class="icon-gou"></i>
         自购轻松省
       </p>
       <p class="item f24">
-        <i></i>
+        <i class="icon-gou"></i>
         分享简单赚
       </p>
       <p class="item f24 pull-right">
-        <i></i>
+        <i class="icon-gou"></i>
         100%正品保证
       </p>
     </div>
@@ -455,8 +478,9 @@
   <script src="../static/js/lib/swiper.min.js"></script>
 <script>
   $(function() {
-    $('.nav-item').on('click', function() {
-      $('.nav-item').removeClass('active');
+    $('.nav-bar .nav-item').on('click', function() {
+      if ($(this).hasClass('btn-nav-more')) return;
+      $('.nav-bar .nav-item').removeClass('active');
       $(this).addClass('active');
     });
 
@@ -488,6 +512,20 @@
         },
       },
     });
+
+    $('.icon-more').on('click', function() {
+      $('.nav-more').addClass('show');
+      $('.mod').show().addClass('show');
+    })
+    $('.icon-close-sm').on('click', function() {
+      $('.nav-more').removeClass('show');
+      $('.mod').removeClass('show');
+      $('.mod').on('transitionend', function() {
+        setTimeout(function() {
+          $('.mod').hide();
+        }, 0)
+      })
+    })
   });
 </script>
 </body>

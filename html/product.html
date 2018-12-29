@@ -18,7 +18,7 @@
     <a href="/" class="block pull-left">
       <i class="icon-back"></i>
     </a>
-    <a href="javascript:;" class="block pull-right open-popup" data-target="#postagePopup">
+    <a href="javascript:;" class="block pull-right open-popup" data-target="#sharePopup1">
       <i class="icon-share"></i>
     </a>
   </div>
@@ -134,9 +134,11 @@
         </li>
         <div class="split-line"></div>
         <li class="basicitem clearfix">
-          <div class="basicitem-name">运费</div>
-          <div class="basicitem-param">满99元免运费</div>
-          <i class="icon-arrow-right"></i>
+          <a href="javascript:;" class="block open-popup clearfix" data-target="#postagePopup">
+            <div class="basicitem-name">运费</div>
+            <div class="basicitem-param">满99元免运费</div>
+            <i class="icon-arrow-right"></i>
+          </a>
         </li>
         <div class="split-line"></div>
         <li class="basicitem clearfix">
@@ -163,7 +165,7 @@
       </div>
   </div>
   <!-- footer1 -->
-  <div class="product-footer clearfix" style="display: none">
+  <div class="product-footer clearfix" style="">
     <div class="page-links pull-left weui-flex">
       <a href="/" class="link block weui-flex__item text-center">
         <i class="icon-home"></i>
@@ -174,15 +176,15 @@
         <span>购物车</span>
       </a>
     </div>
-    <div class="btn btn-add-car pull-left">
+    <a href="javascript:;" class="btn btn-add-car pull-left block open-popup" data-target="#specselectPopup">
       加入购物车
-    </div>
-    <div class="btn btn-buy pull-left">
+    </a>
+    <a href="javascript:;" class="btn btn-buy pull-left block open-popup" data-target="#specselectPopup">
       立即购买
-    </div>
+    </a>
   </div>
   <!-- footer2 -->
-  <div class="product-footer product-footer2 clearfix">
+  <div class="product-footer product-footer2 clearfix" style="display: none">
     <div class="page-links pull-left weui-flex">
       <a href="/" class="link block weui-flex__item text-center">
         <i class="icon-home"></i>
@@ -194,9 +196,9 @@
         <span class="num">3</span>
       </a>
     </div>
-    <div class="btn btn-add-car pull-left">
+    <a href="javascript:;" class="btn btn-add-car pull-left block open-popup" data-target="#specselectPopup">
       加入购物车
-    </div>
+    </a>
   </div>
   <!-- 回到顶部按钮 -->
   <i class="scroll-top"></i>
@@ -212,14 +214,19 @@
         </a>
       </div>
       <div class="main">
-        <ul class="couponDialog-list">
+        <ul class="coupon-list">
           <li class="clearfix">
             <div class="coupon-left">
               <div class="coupon-left-price"><span>¥</span><span>30</span></div>
               <div class="coupon-left-line"></div>
               <div class="f24">满100可用</div>
             </div>
-            <div class="coupon-right"></div>
+            <div class="coupon-right clearfix">
+              <p class="type"><span>【限用】</span>平台部分商品可用</p>
+              <p class="title">双十一特惠券满100减30</p>
+              <p class="date">有效期2018.11.11~2018.12.12</p>
+              <p class="btn-take circle-btn">立即领取</p>
+            </div>
           </li>
           <li class="clearfix">
             <div class="coupon-left">
@@ -227,71 +234,16 @@
               <div class="coupon-left-line"></div>
               <div class="f24">满100可用</div>
             </div>
-            <div class="coupon-right"></div>
-          </li>
-          <li class="clearfix">
-            <div class="coupon-left">
-              <div class="coupon-left-price"><span>¥</span><span>30</span></div>
-              <div class="coupon-left-line"></div>
-              <div class="f24">满100可用</div>
+            <div class="coupon-right">
+              <p class="type"><span>【限用】</span>平台部分商品可用</p>
+              <p class="title">双十一特惠券满100减30</p>
+              <p class="date">有效期2018.11.11~2018.12.12</p>
+              <p class="btn-take btn-taken circle-btn">已领完</p>
             </div>
-            <div class="coupon-right"></div>
-          </li>
-          <li class="clearfix">
-            <div class="coupon-left">
-              <div class="coupon-left-price"><span>¥</span><span>30</span></div>
-              <div class="coupon-left-line"></div>
-              <div class="f24">满100可用</div>
-            </div>
-            <div class="coupon-right"></div>
-          </li>
-          <li class="clearfix">
-            <div class="coupon-left">
-              <div class="coupon-left-price"><span>¥</span><span>30</span></div>
-              <div class="coupon-left-line"></div>
-              <div class="f24">满100可用</div>
-            </div>
-            <div class="coupon-right"></div>
           </li>
         </ul>
       </div>
     </div>
-  </div>
-	<div class="modal-outter couponDialog" style="display: none;">
-		<div class="modal-title">
-			<h4>优惠券</h4>
-		</div>
-		<div class="modal-close"></div>
-		<div class="modal-content">
-			<ul class="couponDialog-list">
-				<li class="clearfix">
-					<div class="coupon-left">
-						<div class="coupon-left-price"><span>¥</span><span>30</span></div>
-						<div class="coupon-left-line"></div>
-						<div class="f24">满100可用</div>
-					</div>
-					<div class="coupon-right"></div>
-				</li>
-			</ul>
-		</div>
-	</div>
-	<div id="couponmodal" class="weui-popup-container" style="display: none;">
-	  <div class="weui-popup-overlay"></div>
-	  <div class="weui-popup-modal">
-	    <div class="modal-outter">
-	    	<div class="modal-title">
-	    		<h4>优惠券</h4>
-	    	</div>
-	    	<div class="modal-content">
-	    		<ul>
-	    			<li>
-	    				<div class="coupon-left"></div>
-	    				<div class="coupon-right"></div>
-	    			</li>
-	    		</ul>
-	    	</div>
-	    </div>
-	  </div>
   </div>
   <!-- 分享弹窗一 -->
   <div class="weui-popup-container share-popup popup-bottom" id="sharePopup1">
@@ -364,12 +316,61 @@
       </div>
     </div>
   </div>
+  <!-- 规格选择弹窗 -->
+  <div class="weui-popup-container specselect-popup popup-bottom" id="specselectPopup">
+    <div class="weui-popup-overlay"></div>
+    <div class="weui-popup-modal">
+      <div class="goods-info-head clearfix">
+        <img src="../static/img/demo/goods12.png" alt="">
+        <div class="info">
+          <p class="price red-font f32">￥199.00</p>
+          <p>库存211414件</p>
+          <p>请选择 尺码 颜色分类</p>
+        </div>
+        <a href="javascript:;" class="pull-right close-popup">
+          <i class="icon-close"></i>
+        </a>
+      </div>
+      <div class="main">
+        <div class="spec-item-wrap clearfix">
+          <p class="title">颜色</p> 
+          <p class="spec-item">红色</p>
+          <p class="spec-item">红色</p>
+          <p class="spec-item">红色</p>
+          <p class="spec-item disabled">红色</p>
+          <p class="spec-item">红色</p>
+          <p class="spec-item">红色</p>
+          <p class="spec-item active">奇奇怪怪的颜色</p>
+        </div>
+        <div class="spec-item-wrap clearfix">
+          <p class="title">尺寸</p> 
+          <p class="spec-item">XS</p>
+          <p class="spec-item active">S</p>
+          <p class="spec-item">M</p>
+          <p class="spec-item">L</p>
+          <p class="spec-item">XL</p>
+        </div>
+        <div class="spec-item-wrap clearfix">
+          <p class="title pull-left" style="line-height: .62rem;">数量</p> 
+          <div class="count-num pull-right">
+            <span class="num-minus disabled">-</span>
+            <input type="number" class="weui-input num-input" value="0">
+            <span class="num-add">+</span>
+          </div>
+        </div>
+      </div>
+      <div class="specselect-popup-footer weui-flex">
+        <p class="weui-flex__item btn-addcar">加入购物车</p>
+        <p class="weui-flex__item btn-buy">立即购买</p>
+      </div>
+    </div>
+  </div>
+
   <script src="//cdn.bootcss.com/jquery/1.11.0/jquery.min.js"></script>
   <script src="//cdn.bootcss.com/jquery-weui/0.8.3/js/jquery-weui.min.js"></script>
   <script src="../static/js/lib/swiper.min.js"></script>
   <script type="text/javascript">
   	$(function() {
-
       // 收藏及取消
       $('.goods-detail-save').on('click', function () {
         $(this).toggleClass('active');
@@ -390,6 +391,47 @@
           },
         },
       });
+
+      $('.spec-item').on('click', function () {
+        var $this = $(this)
+        if ($this.hasClass('disabled')) return
+        $this.siblings('.spec-item').removeClass('active');
+        $this.toggleClass('active')
+      })
+
+      $('.num-input').on('input', function() {
+        var $this = $(this);
+        if ($this.val() || $this.val() > 0) {
+          $this.prev().removeClass('disabled');
+        } else {
+          $this.prev().addClass('disabled');
+        }
+      })
+
+      $('.num-add').on('click', function() {
+        var $this = $(this);
+        var $input = $this.prev();
+        var num = parseInt($input.val() || 0);
+
+        if ($this.hasClass('disabled')) return;
+
+        $input.val(num + 1);
+        $('.num-minus').removeClass('disabled');
+      })
+
+      $('.num-minus').on('click', function() {
+        var $this = $(this);
+        var $input = $this.next();
+        var num = parseInt($input.val() || 0);
+
+        if ($this.hasClass('disabled') && num === 0) return;
+
+        num--;
+        $input.val(num);
+
+        if (num === 0) $this.addClass('disabled');
+        $('.num-add').removeClass('disabled');
+      })
   	});
   </script>
 </body>
