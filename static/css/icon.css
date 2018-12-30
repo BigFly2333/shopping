@@ -113,3 +113,19 @@
 	background-size: contain!important;
   margin: auto;
 }
+.icon-order-shop {
+  display: block;
+	width: 0.32rem;
+	height: 0.32rem;	
+	background: url(../img/icon-order-shop.png) no-repeat center;
+	background-size: contain!important;
+  margin: auto;
+}
+.icon-vip {
+  display: block;
+	width: 0.28rem;
+	height: 0.28rem;	
+	background: url(../img/icon-vip.png) no-repeat center;
+	background-size: contain!important;
+  margin: auto;
+}

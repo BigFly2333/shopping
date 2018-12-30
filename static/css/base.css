@@ -101,14 +101,35 @@ table {
 .colorf {
   color: #fff!important;
 }
-.fontweight-5 {
+.bg-white {
+  background: #fff;
+}
+.fbold{
   font-weight: 500!important;
+}
+.fbolder{
+  font-weight: bold!important;
+}
+.margin-t-10 {
+  margin-top: .1rem!important;
+}
+.margin-t-15 {
+  margin-top: .15rem!important;
+}
+.margin-t-20 {
+  margin-top: .20rem!important;
+}
+.margin-t-70 {
+  margin-top: .70rem!important;
 }
 .margin-b-10 {
   margin-bottom: .1rem!important;
 }
 .margin-b-20 {
   margin-bottom: .2rem!important;
+}
+.margin-b-50 {
+  margin-bottom: .5rem!important;
 }
 .text-overflow {
   white-space:nowrap;
@@ -195,11 +216,16 @@ h1.title {
 .fixed {
   position: fixed!important;
 }
+.container-row {
+  padding: 0 .32rem;
+}
 
+/* weui tab */
 .weui-tabbar.fixed .weui-tabbar__item.weui-bar__item_on .weui-tabbar__label {
   color: #D61518;
 }
 
+/* swiper */
 .swiper-container .swiper-pagination {
 	left: auto;
 	right: .14rem;
@@ -244,7 +270,7 @@ h1.title {
 .weui-popup-container .head {
   width: 100%;
   height: 1.04rem;
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid #F0F0F0;
   padding: 0 .34rem;
 }
 .weui-popup-container .head .title {
@@ -264,7 +290,8 @@ h1.title {
 	margin-bottom: 0.15rem;
 	height:2rem;
 	background: #fff;
-	border-radius: 0.06rem;
+  border-radius: 0.08rem;
+  box-shadow:0px .03rem .1rem 0px rgba(0, 0, 0, 0.1);
 }
 .coupon-list li .coupon-left{
 	width: 2.1rem;
@@ -340,4 +367,9 @@ h1.title {
 }
 .weui-popup-modal {
   background: #fff!important;
+}
+
+/* transition */
+.transition {
+  transition: all .3s cubic-bezier(.4,0,.2,1);
 }

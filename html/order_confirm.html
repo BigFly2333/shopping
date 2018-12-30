@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="../static/css/icon.css">
   <link rel="stylesheet" href="../static/css/swiper.min.css">
   <link rel="stylesheet" href="../static/css/weui.min.css">
+  <link rel="stylesheet" href="../static/css/weui-patch.css">
   <link rel="stylesheet" href="../static/css/jq-weui.css">
   <link rel="stylesheet" href="../static/css/order_confirm.css">
   <title>shopping</title>
@@ -22,21 +23,245 @@
     确认订单
   </div>
   <div class="main-page">
-    <div class="user-info container-row">
-      <p class="top f28 color3 margin-b-20 fontweight-5">田某某<span class="phone">13186999999</span></p>
+    <div class="address-wrap container-row bg-white margin-b-20">
+      <p class="top f28 color3 margin-b-20 fbold">田某某<span class="phone">13186999999</span></p>
       <p class="area color3 f24">
         <i class="icon-area"></i>
         浙江省 杭州市 余杭区 欧美金融城T5，见佛杀佛骄傲的说粉丝的贾覅减肥，四点就覅的
       </p>
       <i class="icon-arrow-right-big"></i>
     </div>
+    <div class="add-address-wrap container-row bg-white margin-b-20 clearfix">
+      <i class="icon-area pull-left"></i>
+      <span class="pull-left f28 color3">新增地址</span>
+      <i class="icon-arrow-right-big pull-right"></i>
+    </div>
+    <div class="product-list-wrap bg-white margin-b-20">
+      <div class="shop-product">
+        <p class="shop-head f28 color3">
+          <i class="icon-order-shop"></i>
+          田某某的店铺
+        </p>
+        <div class="product-item clearfix">
+          <div class="imgbox">
+            <img src="../static/img/demo/goods1.png" alt="">
+          </div>
+          <div class="info-row pull-left">
+            <p class="name fbold lineclamp2 f24">Apple 苹果 iPad mini4 128G 7.9英寸 WiFi版</p>
+            <p class="spec f24 color9 margin-t-15">深空灰</p>
+          </div>
+          <div class="num-row pull-right">
+            <p class="price fbolder f28 color3">¥26800.00</p>
+            <p class="count text-right f24 color9">x1</p>
+          </div>
+        </div>
+        <div class="product-item clearfix">
+          <div class="imgbox">
+            <img src="../static/img/demo/goods3.png" alt="">
+          </div>
+          <div class="info-row pull-left">
+            <p class="name fbold lineclamp2 f24">Apple 苹果 iPad mini4 128G 7.9英寸 WiFi版撒打扫房间爱哦是的佛撒娇</p>
+            <p class="spec f24 color9 margin-t-15">深空灰</p>
+          </div>
+          <div class="num-row pull-right">
+            <p class="price fbolder f28 color3">¥26800.00</p>
+            <p class="count text-right f24 color9">x1</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="gold-wrap container-row bg-white margin-b-20 clearfix">
+      <p class="pull-left f28 color3">
+        使用金币<span class="color6">（可用金币200.22）</span>
+      </p>
+      <div class="weui-cell__ft pull-right margin-t-15">
+        <input class="weui-switch" type="checkbox"/>
+      </div>
+    </div>
+    <div class="coupon-wrap container-row bg-white margin-b-20">
+      <a href="javascript:;" class="block clearfix open-popup" data-target="#couponPopup">
+        <p class="pull-left f28 color3">
+          优惠券
+        </p>
+        <p class="pull-right clearfix color6 f28">
+          -¥95.00
+          <i class="icon-arrow-right-big pull-right"></i>
+        </p>
+      </a>
+    </div>
+    <div class="rebate-wrap container-row bg-white margin-b-20 clearfix">
+      <p class="pull-left f28 color3">
+        预期返利（包含月结）
+      </p>
+      <p class="pull-right clearfix color6 f28">
+        ¥1000.00
+      </p>
+    </div>
+    <div class="cost-detail-wrap bg-white">
+      <p class="cost-item f24 color9">
+        商品金额
+        <span class="pull-right color3 f28 fbolder">¥2888888.00</span>
+      </p>
+      <p class="cost-item f24 color9">
+        商品优惠券
+        <span class="pull-right red-font f28 fbolder">-¥95.00</span>
+      </p>
+      <p class="cost-item f24 color9">
+        活动优惠
+        <span class="pull-right red-font f28 fbolder">-¥100.00</span>
+      </p>
+      <p class="cost-item vip-item f24 color9">
+        <span class="pull-left">会员减免</span>
+        <i class="icon-vip pull-left"></i>
+        <span class="pull-right red-font f28 fbolder">-¥100.00</span>
+      </p>
+      <p class="cost-item f24 color9">
+        金币
+        <span class="pull-right red-font f28 fbolder">-¥100.00</span>
+      </p>
+      <p class="cost-item f24 color9">
+        运费
+        <span class="pull-right color3 f28 fbolder">+¥100.00</span>
+      </p>
+    </div>
   </div>
+
+  <!-- footer1 -->
+  <div class="footer clearfix">
+    <p class="total-price pull-left text-right f28 color3 container-row">
+      实付款: <span class="red-font f32">¥699.99</span>
+    </p>
+    <p class="btn-submit pull-right colorf f28 text-center">确认提交</p>
+  </div>
+  <!-- footer2 -->
+  <div class="footer clearfix" style="display: none;">
+    <p class="total-price pull-left text-right f28 color3 container-row">
+      实付款: <span class="red-font f32">¥699.99</span>
+    </p>
+    <p class="btn-submit pull-right colorf f28 text-center disabled">该地区不支持配送</p>
+  </div>
+
+  <!--优惠券弹出框-->
+  <div class="weui-popup-container coupon-popup popup-bottom" id="couponPopup">
+    <div class="weui-popup-overlay"></div>
+    <div class="weui-popup-modal">
+      <div class="head clearfix">
+        <p class="title pull-left">优惠券</p>
+        <a href="javascript:;" class="pull-right close-popup">
+          <i class="icon-close"></i>
+        </a>
+      </div>
+      <div class="main">
+        <ul class="coupon-list weui-cells_radio">
+          <li>
+            <label class="block weui-check__label clearfix" for="coupon1">
+              <div class="coupon-left">
+                <div class="coupon-left-price"><span>¥</span><span>30</span></div>
+                <div class="coupon-left-line"></div>
+                <div class="f24">满100可用</div>
+              </div>
+              <div class="coupon-right clearfix">
+                <p class="type"><span>【限用】</span>平台部分商品可用</p>
+                <p class="title">双十一特惠券满100减30</p>
+                <p class="date">有效期2018.11.11~2018.12.12</p>
+                <div class="btn-checkbox">
+                  <input type="radio" class="weui-check coupon-check" name="radioCoupon" id="coupon1">
+                  <i class="icon-checked"></i>
+                </div>
+              </div>
+            </label>
+          </li>
+          <li>
+            <label class="block weui-check__label clearfix" for="coupon2">
+              <div class="coupon-left">
+                <div class="coupon-left-price"><span>¥</span><span>30</span></div>
+                <div class="coupon-left-line"></div>
+                <div class="f24">满100可用</div>
+              </div>
+              <div class="coupon-right">
+                <p class="type"><span>【限用】</span>平台部分商品可用</p>
+                <p class="title">双十一特惠券满100减30</p>
+                <p class="date">有效期2018.11.11~2018.12.12</p>
+                <div class="btn-checkbox">
+                  <input type="radio" class="weui-check coupon-check" name="radioCoupon" id="coupon2">
+                  <i class="icon-checked"></i>
+                </div>
+              </div>
+            </label>
+          </li>
+          <li>
+            <label class="block weui-check__label clearfix" for="coupon3">
+              <div class="coupon-left">
+                <div class="coupon-left-price"><span>¥</span><span>30</span></div>
+                <div class="coupon-left-line"></div>
+                <div class="f24">满100可用</div>
+              </div>
+              <div class="coupon-right">
+                <p class="type"><span>【限用】</span>平台部分商品可用</p>
+                <p class="title">双十一特惠券满100减30</p>
+                <p class="date">有效期2018.11.11~2018.12.12</p>
+                <div class="btn-checkbox">
+                  <input type="radio" class="weui-check coupon-check" name="radioCoupon" id="coupon3">
+                  <i class="icon-checked"></i>
+                </div>
+              </div>
+            </label>
+          </li>
+          <li>
+            <label class="block weui-check__label clearfix" for="coupon4">
+              <div class="coupon-left">
+                <div class="coupon-left-price"><span>¥</span><span>30</span></div>
+                <div class="coupon-left-line"></div>
+                <div class="f24">满100可用</div>
+              </div>
+              <div class="coupon-right">
+                <p class="type"><span>【限用】</span>平台部分商品可用</p>
+                <p class="title">双十一特惠券满100减30</p>
+                <p class="date">有效期2018.11.11~2018.12.12</p>
+                <div class="btn-checkbox">
+                  <input type="radio" class="weui-check coupon-check" name="radioCoupon" id="coupon4">
+                  <i class="icon-checked"></i>
+                </div>
+              </div>
+            </label>
+          </li>
+        </ul>
+      </div>
+      <div class="popup-foot f28 color6 text-center">
+        不使用优惠券
+      </div>
+    </div>
+  </div>
+
+  <!-- 金币抵扣confirm -->
+
 
   <script src="//cdn.bootcss.com/jquery/1.11.0/jquery.min.js"></script>
   <script src="//cdn.bootcss.com/jquery-weui/0.8.3/js/jquery-weui.min.js"></script>
   <script src="../static/js/lib/swiper.min.js"></script>
   <script>
     $(function() {
+      $('.coupon-list li').on('click', function() {
+        $.closePopup();
+      });
+      $('.coupon-popup .popup-foot').on('click', function() {
+        $('.coupon-check').attr("checked",false);
+        $.closePopup();
+      });
+
+      // 金币抵扣confirm
+      $('.btn-submit').on('click', function() {
+        var $this = $(this);
+        if ($this.hasClass('disabled')) return;
+        $.modal({
+          title: "",
+          text: "金币抵扣后订单支付现金为0元，请直接确认购买吧！",
+          buttons: [
+            { text: "再想想", className: "confirm-concel color6", onClick: function(){ console.log(1)} },
+            { text: "确认购买", className: "confirm-sure red-font", onClick: function(){ console.log(2)} },
+          ]
+        });
+      })
     });
   </script>
 </body>
