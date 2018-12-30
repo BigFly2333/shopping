@@ -10,10 +10,24 @@
   position: relative;
   padding-top: .28rem;
   padding-bottom: .24rem;
+  padding-right: 1.14rem;
 }
 .main-page .user-info .phone {
   padding-left: .4rem;
+  font-weight: normal;
 }
 .main-page .user-info .area {
-  
+  position: relative;
+  padding-left: .45rem;
+}
+.main-page .user-info .area .icon-area {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.main-page .user-info .icon-arrow-right-big {
+  position: absolute;
+  right: .32rem;
+  top: 50%;
+  transform: translate(0, -50%);
 }

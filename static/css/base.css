@@ -101,6 +101,9 @@ table {
 .colorf {
   color: #fff!important;
 }
+.fontweight-5 {
+  font-weight: 500!important;
+}
 .margin-b-10 {
   margin-bottom: .1rem!important;
 }

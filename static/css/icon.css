@@ -36,6 +36,13 @@
   background: url(../img/icon-arrow-right.png) no-repeat center;
   background-size: contain!important;
 }
+.icon-arrow-right-big{
+	display: block;
+  height: .36rem;
+  width: .36rem;
+  background: url(../img/icon-arrow-right-big.png) no-repeat center;
+  background-size: contain!important;
+}
 .icon-baoyou {
 	display: block;
   height: .28rem;
@@ -95,6 +102,14 @@
 	width: 0.5rem;
 	height: 0.38rem;	
 	background: url(../img/icon-close-sm.png) no-repeat center;
+	background-size: contain!important;
+  margin: auto;
+}
+.icon-area {
+  display: block;
+	width: 0.36rem;
+	height: 0.36rem;	
+	background: url(../img/icon-area.png) no-repeat center;
 	background-size: contain!important;
   margin: auto;
 }
