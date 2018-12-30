@@ -1,0 +1,19 @@
+.container-row {
+  padding: 0 .32rem;
+}
+
+.main-page {
+  padding-top: .88rem;
+}
+
+.main-page .user-info {
+  position: relative;
+  padding-top: .28rem;
+  padding-bottom: .24rem;
+}
+.main-page .user-info .phone {
+  padding-left: .4rem;
+}
+.main-page .user-info .area {
+  
+}

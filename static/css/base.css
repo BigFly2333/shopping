@@ -89,6 +89,24 @@ table {
 .f60 {
 	font-size: 0.6rem!important;
 }
+.color3 {
+  color: #333!important;
+}
+.color6 {
+  color: #666!important;
+}
+.color9 {
+  color: #999!important;
+}
+.colorf {
+  color: #fff!important;
+}
+.margin-b-10 {
+  margin-bottom: .1rem!important;
+}
+.margin-b-20 {
+  margin-bottom: .2rem!important;
+}
 .text-overflow {
   white-space:nowrap;
   overflow:hidden;
@@ -202,10 +220,13 @@ h1.title {
   background: #fff;
   z-index: 8;
 }
-.header .icon-back {
+.header .btn-back {
   position: absolute;
-  left: .36rem;
+  left: .16rem;
   top: 0;
+  padding: 0 .2rem;
+}
+.header .btn-back .icon-back {
   height: .88rem;
   width: .42rem;
 }
