@@ -5,11 +5,11 @@
   <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <script src="../static/js/lib/flexible.js"></script>
-  <link rel="stylesheet" href="../static/css/base.css">
   <link rel="stylesheet" href="../static/css/icon.css">
   <link rel="stylesheet" href="../static/css/swiper.min.css">
   <link rel="stylesheet" href="../static/css/weui.min.css">
-  <link rel="stylesheet" href="../static/css/jq-weui.css">
+  <link rel="stylesheet" href="../static/css/jquery-weui.min.css">
+  <link rel="stylesheet" href="../static/css/base.css">
   <link rel="stylesheet" href="../static/css/product.css">
   <title>shopping</title>
 </head>
@@ -204,9 +204,9 @@
   <i class="scroll-top"></i>
 	<!--弹出框说明系列-->
   <!--优惠券弹出框-->
-  <div class="weui-popup-container coupon-popup popup-bottom" id="couponPopup">
-    <div class="weui-popup-overlay"></div>
-    <div class="weui-popup-modal">
+  <div class="weui-popup__container coupon-popup popup-bottom" id="couponPopup">
+    <div class="weui-popup__overlay"></div>
+    <div class="weui-popup__modal">
       <div class="head clearfix">
         <p class="title pull-left">优惠券</p>
         <a href="javascript:;" class="pull-right close-popup">
@@ -246,9 +246,9 @@
     </div>
   </div>
   <!-- 分享弹窗一 -->
-  <div class="weui-popup-container share-popup popup-bottom" id="sharePopup1">
-    <div class="weui-popup-overlay"></div>
-    <div class="weui-popup-modal">
+  <div class="weui-popup__container share-popup popup-bottom" id="sharePopup1">
+    <div class="weui-popup__overlay"></div>
+    <div class="weui-popup__modal">
       <p class="title">赚10.01元</p>
       <p class="tip">只要你的好友通过你的链接购买此商品，你就能赚到10.01元利润</p>
       <div class="share-type weui-flex">
@@ -275,9 +275,9 @@
     </div>
   </div>
   <!-- 分享弹窗二 -->
-  <div class="weui-popup-container share-popup popup-bottom" id="sharePopup2">
-    <div class="weui-popup-overlay"></div>
-    <div class="weui-popup-modal">
+  <div class="weui-popup__container share-popup popup-bottom" id="sharePopup2">
+    <div class="weui-popup__overlay"></div>
+    <div class="weui-popup__modal">
       <p class="title">分享到</p>
       <div class="share-type weui-flex">
         <div class="weui-flex__item item text-center">
@@ -299,9 +299,9 @@
     </div>
   </div>
   <!-- 油费政策弹窗 -->
-  <div class="weui-popup-container postage-popup popup-bottom" id="postagePopup">
-    <div class="weui-popup-overlay"></div>
-    <div class="weui-popup-modal">
+  <div class="weui-popup__container postage-popup popup-bottom" id="postagePopup">
+    <div class="weui-popup__overlay"></div>
+    <div class="weui-popup__modal">
       <div class="head clearfix">
         <p class="title pull-left">全球时刻邮费政策</p>
         <a href="javascript:;" class="pull-right close-popup">
@@ -317,9 +317,9 @@
     </div>
   </div>
   <!-- 规格选择弹窗 -->
-  <div class="weui-popup-container specselect-popup popup-bottom" id="specselectPopup">
-    <div class="weui-popup-overlay"></div>
-    <div class="weui-popup-modal">
+  <div class="weui-popup__container specselect-popup popup-bottom" id="specselectPopup">
+    <div class="weui-popup__overlay"></div>
+    <div class="weui-popup__modal">
       <div class="goods-info-head clearfix">
         <img src="../static/img/demo/goods12.png" alt="">
         <div class="info">
@@ -366,8 +366,8 @@
     </div>
   </div>
 
-  <script src="//cdn.bootcss.com/jquery/1.11.0/jquery.min.js"></script>
-  <script src="//cdn.bootcss.com/jquery-weui/0.8.3/js/jquery-weui.min.js"></script>
+  <script src="../static/js/lib/jquery-2.1.4.js"></script>
+  <script src="../static/js/lib/jquery-weui.min.js"></script>
   <script src="../static/js/lib/swiper.min.js"></script>
   <script type="text/javascript">
   	$(function() {

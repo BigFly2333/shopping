@@ -6,12 +6,11 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
   <script src="../static/js/lib/flexible.js"></script>
-  <link rel="stylesheet" href="../static/css/base.css">
   <link rel="stylesheet" href="../static/css/icon.css">
   <link rel="stylesheet" href="../static/css/swiper.min.css">
   <link rel="stylesheet" href="../static/css/weui.min.css">
-  <link rel="stylesheet" href="../static/css/weui-patch.css">
-  <link rel="stylesheet" href="../static/css/jq-weui.css">
+  <link rel="stylesheet" href="../static/css/jquery-weui.min.css">
+  <link rel="stylesheet" href="../static/css/base.css">
   <link rel="stylesheet" href="../static/css/order_confirm.css">
   <title>shopping</title>
 </head>
@@ -142,9 +141,9 @@
   </div>
 
   <!--优惠券弹出框-->
-  <div class="weui-popup-container coupon-popup popup-bottom" id="couponPopup">
-    <div class="weui-popup-overlay"></div>
-    <div class="weui-popup-modal">
+  <div class="weui-popup__container coupon-popup popup-bottom" id="couponPopup">
+    <div class="weui-popup__overlay"></div>
+    <div class="weui-popup__modal">
       <div class="head clearfix">
         <p class="title pull-left">优惠券</p>
         <a href="javascript:;" class="pull-right close-popup">
@@ -236,8 +235,8 @@
   <!-- 金币抵扣confirm -->
 
 
-  <script src="//cdn.bootcss.com/jquery/1.11.0/jquery.min.js"></script>
-  <script src="//cdn.bootcss.com/jquery-weui/0.8.3/js/jquery-weui.min.js"></script>
+  <script src="../static/js/lib/jquery-2.1.4.js"></script>
+  <script src="../static/js/lib/jquery-weui.min.js"></script>
   <script src="../static/js/lib/swiper.min.js"></script>
   <script>
     $(function() {

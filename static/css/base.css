@@ -323,18 +323,18 @@ h1.title {
 }
 
 /* popup公共部分 */
-.weui-popup-container .head {
+.weui-popup__container .head {
   width: 100%;
   height: 1.04rem;
   border-bottom: 1px solid #F0F0F0;
   padding: 0 .34rem;
 }
-.weui-popup-container .head .title {
+.weui-popup__container .head .title {
   color: #333;
   font-size: .28rem;
   line-height: 1.04rem;
 }
-.weui-popup-container .head .icon-close {
+.weui-popup__container .head .icon-close {
   margin-top: .32rem;
 }
 
@@ -421,11 +421,71 @@ h1.title {
   color: #fff;
   line-height: .48rem;
 }
-.weui-popup-modal {
+.weui-popup__modal {
   background: #fff!important;
 }
 
 /* transition */
 .transition {
   transition: all .3s cubic-bezier(.4,0,.2,1);
+}
+
+/* redio */
+.weui-cells_radio .weui-check:checked+.icon-checked {
+  display: block;
+  width: .4rem;
+  height: .4rem;
+  background: url(../img/icon-checked.png) no-repeat center;
+  background-size: contain!important;
+}
+
+/* my dialog */
+.weui-dialog.show {
+  opacity: 1;
+  visibility: visible;
+}
+.weui-mask.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+/*价钱增减*/
+.count-num {
+  position: relative;
+  width: 2rem;
+  height: .62rem;
+  padding: 0 .6rem;
+  border: 1px solid rgba(240,240,240,1);
+  border-radius: .04rem;
+}
+.count-num input {
+  width: 100%;
+  height: .6rem;
+  padding: .1rem;
+  line-height: .4rem;
+  color: #333;
+  font-size: .26rem;
+  text-align: center;
+}
+.count-num span {
+  position: absolute;
+  top: 0;
+  display: block;
+  width: .6rem;
+  height: .6rem;
+  text-align: center;
+  background: #F0F0F0;
+  color: #333;
+  font-size: 0.24rem;
+  line-height: .6rem;
+}
+.count-num span.disabled {
+  background: #F2F2F2;
+  color: #999;
+}
+.count-num .num-minus {
+  left: 0;
+}
+.count-num .num-add {
+  right: 0;  
 }
