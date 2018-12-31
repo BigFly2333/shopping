@@ -26,7 +26,10 @@ body {
   overflow-x: hidden;
   margin: auto;
 }
-
+button,input{
+	border: none;
+	outline: none;
+}
 a {
   text-decoration: none;
 }
@@ -184,6 +187,56 @@ h1.title {
 }
 .Fb{
 	font-weight: bold;
+}
+.chekboxinput{
+	position: relative;
+	width: 0.4rem;
+	height: 0.4rem;
+}
+.chekboxinput input[type="checkbox"]{
+	width:0.4rem;
+	height: 0.4rem;	
+	opacity: 0;
+}
+.chekboxinput input[type="checkbox"] + label {
+	width:0.4rem;
+	height: 0.4rem;
+    background: #fff;
+    border:1px solid #D3D3D3;
+    border-radius: 50%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.chekboxinput input[type="checkbox"]:checked+ label {
+	background: url(../img/icon-checked.png);
+	background-size: contain!important;
+	border:none;
+}
+.radioinput{
+	position: relative;
+	width: 0.4rem;
+	height: 0.4rem;
+}
+.radioinput input[type="radio"]{
+	width:0.4rem;
+	height: 0.4rem;	
+	opacity: 0;
+}
+.radioinput input[type="radio"] + label {
+	width:0.4rem;
+	height: 0.4rem;
+    background: #fff;
+    border:1px solid #D3D3D3;
+    border-radius: 50%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.radioinput input[type="radio"]:checked+ label {
+	background: url(../img/icon-checked.png);
+	background-size: contain!important;
+	border:none;
 }
 .text-del {
   text-decoration: line-through;
