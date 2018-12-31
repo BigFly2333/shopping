@@ -13,20 +13,28 @@
 	height: 0.96rem;
 	line-height: 0.96rem;
 	padding: 0 0.2rem;
-	font-size: 0.28rem;
+  font-size: 0.28rem;
+	border-bottom: 1px solid rgba(240,240,240,1);
 }
 .pay-way ul{
 	padding-left: 0.32rem;
 }
 .pay-way ul li{
-	padding:0.32rem 0.32rem 0.32rem 0;
+	/* padding:0.32rem 0.32rem 0.32rem 0;
 	line-height: 0.4rem;
-	font-size: 0.32rem;	
+	font-size: 0.32rem;	 */
 	border-bottom: 1px solid rgba(240,240,240,1);
 }
+.pay-way ul li label {
+  position: relative;
+  padding:0.28rem 0.32rem 0.28rem 0;
+  height: 1.16rem;
+	line-height: 0.6rem;
+	font-size: 0.32rem;	
+}
 .pay-way ul li img{
-	width: 0.4rem;
-	height: 0.4rem;
+	width: 0.58rem;
+	height: 0.58rem;
 	margin-right: 0.3rem;
 	vertical-align: middle;
 }
@@ -37,12 +45,13 @@
 .cart-bottom{
 	position: fixed;
 	bottom: 0;
-	z-index:100;
+	z-index: 8;
 	background: #fff;
 	left: 0;
 	right: 0;
 }
-.pay-btn{
+.pay-btn, 
+.btn-submit {
 	width:100%;
 	height:1.1rem;
 	background:rgba(214,21,24,1);
@@ -67,4 +76,27 @@
 }
 .nopay-tip a{	
 	
+}
+
+.payway-list .btn-checkbox{
+  margin-top: .1rem;
+}
+
+.verify-popup .weui-popup__modal .main {
+  padding: .32rem;
+}
+.verify-popup .main input {
+  width: 100%;
+  height: .72rem;
+  padding: .18rem .32rem;
+  line-height: .34rem;
+  border: 1px solid #D2D2D2;
+  outline: none;
+  font-size: .24rem;
+  color: #666;
+  border-radius: .08rem;
+  margin-bottom: .16rem;
+}
+.verify-popup .main input.name {
+  margin-top: .36rem;
 }
