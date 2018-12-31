@@ -1,6 +1,8 @@
 body {
-  padding-top: .88rem;
 	background:rgba(243,243,243,1);
+}
+.main-page {
+  padding-top: .88rem;
 }
 
 .header .text-submit {
