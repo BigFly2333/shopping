@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="../static/js/lib/flexible.js"></script>
+  <link rel="stylesheet" href="../static/css/base.css">
+  <link rel="stylesheet" href="../static/css/icon.css">
+  <link rel="stylesheet" href="../static/css/swiper.min.css">
+  <link rel="stylesheet" href="../static/css/weui.min.css">
+  <link rel="stylesheet" href="../static/css/jq-weui.css">
+  <link rel="stylesheet" href="../static/css/index.css">
+  <link rel="stylesheet" href="../static/css/payway.css">
+  <title>shopping</title>
+</head>
+<body>
+	<div class="header">
+    <a href="/" class="block btn-back">
+      <i class="icon-back"></i>
+    </a>
+   	 支付方式   	
+  </div>
+  <div class="headersplit-h"></div>
+  <div class="pay-price">
+  	订单总额：
+  	<b class="red-font">¥288.00</b>
+  </div>
+  <div class="splitbold-line"></div>
+  <div class="pay-way">
+  	<h4>请选择支付方式</h4>
+  	<ul>
+  		<li class="clearfix">
+  			<img src="../static/img/pay-wechat.png" alt="" />
+				<span>微信支付</span> 
+				<div class="radioinput pull-right">
+					<input type="radio" name="payway" id="radio-1-0"/><label for="radio-1-0"></label>
+				</div>
+  		</li>
+  		<li class="clearfix">
+  			<img src="../static/img/pay-zhifubao.png" alt="" />
+				<span>微信支付</span> 
+				<div class="radioinput pull-right">
+					<input type="radio" name="payway" id="radio-1-1"/><label for="radio-1-1"></label>
+				</div>
+  		</li>
+  		<li class="clearfix">
+  			<img src="../static/img/pay-bank.png" alt="" />
+				<span>亨享宝支付</span> 
+				<span class="gray-font">（推荐）</span>
+				<div class="radioinput pull-right">
+					<input type="radio" name="payway" id="radio-1-2"/><label for="radio-1-2"></label>
+				</div>
+  		</li>
+  	</ul>
+  </div>
+  <!--填写错误提醒-->
+  <div class="nopay-tip">
+  	<p class="gray-font f28">如支付失败，提示： <br />您的身份资料与账户资料不匹配，请核实后再发起支付。请重新填写身份信息</p>
+  	<div class="text-center"><a href="" class="red-font f28">去填写实名认证信息></a></div>
+  </div>
+  <!--底部操作-->
+  <div class="bottom-geduan"></div>
+	<!--底部固定 购买-->
+	<div class="cart-bottom">
+		<button type="button" class="pay-btn">立即支付</button>		
+	</div>
+  <script src="//cdn.bootcss.com/jquery/1.11.0/jquery.min.js"></script>
+  <script src="//cdn.bootcss.com/jquery-weui/0.8.3/js/jquery-weui.min.js"></script>
+  <script src="../static/js/lib/swiper.min.js"></script>
+  <script>
+    $(function() {
+    });
+  </script>
+</body>
+</html>

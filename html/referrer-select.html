@@ -105,7 +105,7 @@
         $('.dialog-add').addClass('show');
       });
 
-      $('.dialog-btn-cancel').on('click', function () {
+      $('.dialog-add .dialog-btn-cancel').on('click', function () {
         $('.weui-mask').removeClass('show');
         $('.weui-dialog').removeClass('show');
       });
@@ -115,6 +115,11 @@
         $('.dialog-confirm-referrer').addClass('show');
       })
 
+      $('.dialog-confirm-referrer .dialog-btn-cancel').on('click', function () {
+        $('.dialog-add').addClass('show');
+        $('.dialog-confirm-referrer').removeClass('show');
+      });
+      
       $('.dialog-confirm-referrer .dialog-btn-sure').on('click', function () {
         $('.weui-mask').removeClass('show');
         $('.weui-dialog').removeClass('show');

@@ -129,3 +129,11 @@
 	background-size: contain!important;
   margin: auto;
 }
+.icon-edit{
+	display: block;
+	width: 0.36rem;
+	height: 0.36rem;	
+	background: url(../img/icon-edit.png) no-repeat center;
+	background-size: contain!important;
+  margin: auto;
+}
