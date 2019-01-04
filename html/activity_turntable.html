@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <script src="../static/js/lib/flexible.js"></script>
+  <link rel="stylesheet" href="../static/css/swiper.min.css">
+  <link rel="stylesheet" href="../static/css/weui.min.css">
+  <link rel="stylesheet" href="../static/css/jquery-weui.min.css">
+  <link rel="stylesheet" href="../static/css/icon.css">
+  <link rel="stylesheet" href="../static/css/base.css">
+  <link rel="stylesheet" href="../static//css/activity_turntable.css">
+  <title>shopping</title>
+</head>
+<body>
+  <img class="activity-bg" src="../static/img/activity_bg.png" alt="">
+  <div class="main-page">
+    <div class="turntable-wrap">
+      <div class="turntable" id="turntable"></div>
+      <i class="btn-arrow"></i>
+    </div>
+    <p class="text-center colorf f32 margin-t-40">您还有<span class="num">2</span>次抽奖机会</p>
+  </div>
+  <div class="weui-mask transition"></div>
+  <div class="weui-dialog dialog-prize transition">
+
+  </div>
+  <script src="../static/js/lib/jquery-2.1.4.js"></script>
+  <script src="../static/js/lib/jquery-weui.min.js"></script>
+  <script src="../static/js/lib/swiper.min.js"></script>
+  <script>
+    $(function() {
+      $('.btn-arrow').on('click', function() {
+        var $this = $(this);
+        var $num = $('.num');
+        var num = parseInt($num.text());
+        if ($this.hasClass('disabled') || num === 0) return;
+        $this.addClass('disabled');
+
+        // ajax向后台请求 n，下面的代码放在ajax中
+        num--;
+        $num.text(num);
+        var n = 1
+        $('#turntable').addClass('turntable-transition');
+        $('#turntable').css('transform', 'rotateZ(' + getDeg(n) + 'deg)');
+        document.getElementById('turntable').addEventListener("transitionend", function() {
+          setTimeout(function() {
+            switch (n) {
+              case 1:
+                $('.dialog-prize').addClass('prize-cut-all');
+                break;
+              case 2:
+                $('.dialog-prize').addClass('prize-gold-20');
+                break;
+              case 3:
+                $('.dialog-prize').addClass('prize-cut-quarter');
+                break;
+              case 4,8:
+                $('.dialog-prize').addClass('prize-gold-5');
+                break;
+              case 5:
+                $('.dialog-prize').addClass('prize-cut-half');
+                break;
+              case 6:
+                $('.dialog-prize').addClass('prize-gold-10');
+                break;
+              case 7:
+                $('.dialog-prize').addClass('prize-gold-50');
+                break;
+            }
+            $('.weui-mask').addClass('show');
+            $('.dialog-prize').addClass('show');
+          }, 0)
+        }, false)
+      });
+
+
+      $('.weui-mask,.dialog-prize').on('click', function() {
+        $('.weui-mask').removeClass('show');
+        $('.dialog-prize').removeClass('show');
+
+        $('#turntable').removeClass('turntable-transition');
+        $('.btn-arrow').removeClass('disabled');
+        setTimeout(function() {
+          $('#turntable').removeAttr("style");
+        }, 0)
+      })
+    });
+
+    /**
+    * n: 通过ajax后台传值过来
+    * 1: 全额免单
+    * 2: 20金币
+    * 3: 1/4免单
+    * 4: 5金币
+    * 5: 1/2金币
+    * 6: 10金币
+    * 7: 50金币
+    * 8: 5金币
+    */
+    function getDeg (n) {
+      var solt = 12 * 360
+      var average = 360 / 8
+      var result = solt + n * average
+      return result
+    }
+  </script>
+</body>
+</html>

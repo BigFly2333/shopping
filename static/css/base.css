@@ -107,6 +107,9 @@ table {
 .colorf {
   color: #fff!important;
 }
+.color-link {
+  color: #2F8CF8;
+}
 .bg-white {
   background: #fff;
 }
@@ -127,6 +130,9 @@ table {
 }
 .margin-t-40 {
   margin-top: .40rem!important;
+}
+.margin-t-60 {
+  margin-top: .60rem!important;
 }
 .margin-t-70 {
   margin-top: .70rem!important;
