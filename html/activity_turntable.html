@@ -39,43 +39,22 @@
         if ($this.hasClass('disabled') || num === 0) return;
         $this.addClass('disabled');
 
-        // ajax向后台请求 n，下面的代码放在ajax中
+        // ajax向后台请求 prizeNum(中奖名称)，下面的代码放在ajax中
+        // ajax中还需返回剩余抽奖次数，如果为0，直接return
         num--;
         $num.text(num);
-        var n = 1
+        var prizeNum = 7;
+        var result = getDeg(prizeNum)
         $('#turntable').addClass('turntable-transition');
-        $('#turntable').css('transform', 'rotateZ(' + getDeg(n) + 'deg)');
+        $('#turntable').css('transform', 'rotateZ(' + result.deg + 'deg)');
         document.getElementById('turntable').addEventListener("transitionend", function() {
           setTimeout(function() {
-            switch (n) {
-              case 1:
-                $('.dialog-prize').addClass('prize-cut-all');
-                break;
-              case 2:
-                $('.dialog-prize').addClass('prize-gold-20');
-                break;
-              case 3:
-                $('.dialog-prize').addClass('prize-cut-quarter');
-                break;
-              case 4,8:
-                $('.dialog-prize').addClass('prize-gold-5');
-                break;
-              case 5:
-                $('.dialog-prize').addClass('prize-cut-half');
-                break;
-              case 6:
-                $('.dialog-prize').addClass('prize-gold-10');
-                break;
-              case 7:
-                $('.dialog-prize').addClass('prize-gold-50');
-                break;
-            }
+            $('.dialog-prize').addClass(result.dialogClass);
             $('.weui-mask').addClass('show');
             $('.dialog-prize').addClass('show');
           }, 0)
         }, false)
       });
-
 
       $('.weui-mask,.dialog-prize').on('click', function() {
         $('.weui-mask').removeClass('show');
@@ -90,7 +69,8 @@
     });
 
     /**
-    * n: 通过ajax后台传值过来
+    * prizeNum: 中奖名次，通过ajax后台传值过来(1到7等奖，Number)
+    * n: 通过中奖名次判断要转的度数
     * 1: 全额免单
     * 2: 20金币
     * 3: 1/4免单
@@ -100,10 +80,53 @@
     * 7: 50金币
     * 8: 5金币
     */
-    function getDeg (n) {
+    function getDeg (prizeNum) {
+      var random = parseInt(Math.random()*10);
+      var n = 8;
+      var dialogClass = 'prize-gold-5';
+      switch (prizeNum) {
+        case 1:
+          n = 1;
+          dialogClass = 'prize-cut-all'
+          break;
+        case 2:
+          n = 5;
+          dialogClass = 'prize-cut-half'
+          break;
+        case 3:
+          n = 3;
+          dialogClass = 'prize-cut-quarter'
+          break;
+        case 4:
+          n = 7;
+          dialogClass = 'prize-gold-50'
+          break;
+        case 5:
+          n = 2;
+          dialogClass = 'prize-gold-20'
+          break;
+        case 6:
+          n = 6;
+          dialogClass = 'prize-gold-10'
+          break;
+        default:
+          console.log(random)
+          if (random < 5) {
+            n = 4
+          } else {
+            n = 8
+          }
+          dialogClass = 'prize-gold-5'
+          break;
+      }
+
       var solt = 12 * 360
       var average = 360 / 8
-      var result = solt + n * average
+      var deg = solt + n * average
+      var result = {
+        deg: deg,
+        dialogClass: dialogClass
+      }
       return result
     }
   </script>
