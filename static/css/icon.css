@@ -137,3 +137,67 @@
 	background-size: contain!important;
   margin: auto;
 }
+.icon-all {
+	display: block;
+	width: 0.24rem;
+	height: 0.24rem;	
+	background: url(../img/icon_all.png) no-repeat center;
+	background-size: contain!important;
+  margin: auto;
+}
+.icon-video-play {
+	display: block;
+	width: 0.7rem;
+	height: 0.86rem;	
+	background: url(../img/icon_video_play.png) no-repeat center;
+	background-size: contain!important;
+  margin: auto;
+}
+.icon-download {
+	display: block;
+	width: 0.26rem;
+	height: 0.26rem;	
+	background: url(../img/icon_download.png) no-repeat center;
+	background-size: contain!important;
+  margin: auto;
+}
+.icon-share {
+	display: block;
+	width: 0.24rem;
+	height: 0.24rem;	
+	background: url(../img/icon_share.png) no-repeat center;
+	background-size: contain!important;
+  margin: auto;
+}
+.icon-calendar {
+  display: block;
+	width: 0.4rem;
+	height: 0.4rem;	
+	background: url(../img/icon_calendar.png) no-repeat center;
+	background-size: contain!important;
+  margin: auto;
+}
+.icon-table {
+  display: block;
+	width: 0.36rem;
+	height: 0.36rem;	
+	background: url(../img/icon_table.png) no-repeat center;
+	background-size: contain!important;
+  margin: auto;
+}
+.icon-black-card {
+  display: block;
+	width: 0.36rem;
+	height: 0.36rem;	
+	background: url(../img/icon_black_card.png) no-repeat center;
+	background-size: contain!important;
+  margin: auto;
+}
+.icon-gold-card {
+  display: block;
+	width: 0.36rem;
+	height: 0.36rem;	
+	background: url(../img/icon_gold_card.png) no-repeat center;
+	background-size: contain!important;
+  margin: auto;
+}
