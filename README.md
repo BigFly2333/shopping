@@ -1,2 +1,2 @@
 # shopping
-外包weui  jquery  商城页面
+weui  jquery  商城页面
